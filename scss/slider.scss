@@ -1,6 +1,7 @@
 /* Slideshow container */
 .slider {
-  max-width: 1000px;
+  width: 90%;
+  height: 20rem;
   position: relative;
   margin: auto;
 }
@@ -8,6 +9,7 @@
 /* Hide the images by default */
 .slider__slide {
   display: none;
+  width: 100%;
 }
 
 /* Next & previous buttons */
@@ -35,7 +37,7 @@
   background-color: rgba(0,0,0,0.8);
 }
 
-.active, .dot:hover {
+.dot.active, .dot:hover {
   background-color: #717171;
 }
 

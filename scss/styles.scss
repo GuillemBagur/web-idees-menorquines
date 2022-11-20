@@ -78,6 +78,7 @@ a {
   padding: 0;
   position: relative;
   background-color: $bgColor;
+  overflow-x: hidden;
 }
 
 .wrapper--main {
@@ -145,7 +146,7 @@ $darkFilter: 10%;
     display: block;
     margin-top: 6rem;
     margin-bottom: 1rem;
-    font-size: 4rem;
+    font-size: 12.5vw;
     color: $mainColor;
   }
 
@@ -737,6 +738,12 @@ $sectionRotation: calc(360deg / $sectionsNum);
   color: darken($mainColor, 20%);
 }
 
+.instagram-media {
+  overflow: hidden;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+
 @media screen and (min-width: 550px) {
   .section {
     width: 80vw;
@@ -816,5 +823,9 @@ $sectionRotation: calc(360deg / $sectionsNum);
   .map-image-wrapper .section__img,
   .figure {
     max-height: 70vh;
+  }
+
+  .section__title {
+    font-size: 5rem;
   }
 }
