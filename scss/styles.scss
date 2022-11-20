@@ -8,6 +8,11 @@ $fonts: Calibri, Arial, Helvetica, sans-serif;
 
 $undarkDuration: 5;
 
+html,
+body {
+  overscroll-behavior-y: contain;
+}
+
 * {
   font-family: $fonts;
   padding: 0;
@@ -197,6 +202,10 @@ $darkFilter: 10%;
 
 .word--white {
   color: $whiteColor;
+}
+
+.word--orange {
+  color: $mainColor;
 }
 
 .section:nth-child(even) .section__main-text {
@@ -690,12 +699,13 @@ $sectionRotation: calc(360deg / $sectionsNum);
 }
 
 .card {
+  $backcroundColor: $mainColor;
   padding: 0.7rem;
   padding-bottom: 1.5rem;
   width: 75%;
   margin: auto;
   margin-bottom: 2rem;
-  background-color: $mainColor;
+  background-color: $backcroundColor;
   border-radius: 7px;
   color: $whiteColor;
 
@@ -717,6 +727,14 @@ $sectionRotation: calc(360deg / $sectionsNum);
     text-align: justify;
     color: rgba($whiteColor, 0.8);
   }
+}
+
+.card:nth-child(even) {
+  background-color: darken($mainColor, 20%);
+}
+
+.card:nth-child(even) .btn {
+  color: darken($mainColor, 20%);
 }
 
 @media screen and (min-width: 550px) {

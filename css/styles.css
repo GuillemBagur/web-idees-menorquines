@@ -1,3 +1,8 @@
+html,
+body {
+  overscroll-behavior-y: contain;
+}
+
 * {
   font-family: Calibri, Arial, Helvetica, sans-serif;
   padding: 0;
@@ -174,6 +179,10 @@ a {
 
 .word--white {
   color: #f0f0f0;
+}
+
+.word--orange {
+  color: #f07d00;
 }
 
 .section:nth-child(even) .section__main-text {
@@ -716,6 +725,14 @@ a {
 .card__p {
   text-align: justify;
   color: rgba(240, 240, 240, 0.8);
+}
+
+.card:nth-child(even) {
+  background-color: #8a4800;
+}
+
+.card:nth-child(even) .btn {
+  color: #8a4800;
 }
 
 @media screen and (min-width: 550px) {
