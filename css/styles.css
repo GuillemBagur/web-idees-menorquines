@@ -737,9 +737,11 @@ a {
 }
 
 .instagram-media {
-  overflow: hidden;
+  padding: 0;
+  margin: 0;
   height: 100%;
-  aspect-ratio: 1/1;
+  max-height: 100%;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 550px) {

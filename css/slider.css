@@ -1,59 +1,43 @@
 /* Slideshow container */
 .slider {
-  width: 90%;
-  height: 20rem;
   position: relative;
+  height: 30rem;
   margin: auto;
+  padding: 0;
+  background-color: blue;
+  overflow: hidden;
 }
 
-/* Hide the images by default */
-.slider__slide {
-  display: none;
-  width: 100%;
-}
-
-/* Next & previous buttons */
-.slide__prev, .slide__next {
-  cursor: pointer;
+.slider__nav {
   position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
+  height: 100%;
+  width: 6rem;
+  top: 0;
+  font-size: 3rem;
   color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  z-index: 2;
+  border: 0;
+  background: none;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.8));
 }
 
-.slide__next {
+.slider__nav--left {
+  left: 0;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.8));
+}
+
+.slider__nav--right {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.8));
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.dot.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+.slider__slides-wrapper {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  gap: 1rem;
+  background-color: green;
+  transition: transform 0.3s;
 }
 
 /*# sourceMappingURL=slider.css.map */
