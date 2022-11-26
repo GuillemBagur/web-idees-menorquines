@@ -1,9 +1,9 @@
 const navLinks = {
-  Inicio: "index",
-  "¿Quiénes somos?": "quienes-somos",
-  Contacta: "contacto",
-  Catálogo: "catalogo",
-  Servicios: "servicios",
+  Inicio: "index.html",
+  "¿Quiénes somos?": "quienes-somos.html",
+  Contacta: "contacto.html",
+  Catálogo: "index.html#catalogo",
+  Servicios: "servicios.html",
 };
 
 let linksList = "";
@@ -13,7 +13,7 @@ for (let key in navLinks) {
   const link = navLinks[key];
   const toRender = `
     <li class="nav__nav-link-li">
-        <a class="nav__nav-link" href="${link}.html">${linkTitle}</a>
+        <a class="nav__nav-link" href="${link}">${linkTitle}</a>
     </li>`;
 
   linksList += toRender;

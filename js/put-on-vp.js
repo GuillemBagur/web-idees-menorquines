@@ -1,14 +1,21 @@
+/**
+ * Checks if all of the elements of the given array are visible on ViewPort
+ * @param {array} els - An array of elements to check if are all of them on vp or not
+ * @param {number} errorMargin - A number to set any error margin
+ *
+ * @returns True (if all the elements are visible) and False if not
+ */
 const isElementInViewport = (els, errorMargin = 0) => {
-  console.log(els.constructor);
-  if(!els[0]) els = [els];
+  if (!els[0]) els = [els];
   // Iterating on all the els with the same data-id to make sure the viewport scroll adds up
   let results = [];
-  for (let el of els) {
-    var rect = el.getBoundingClientRect();
+  for (let i = 0; i < els.length; i++) {
+    const el = els[i];
+    const rect = el.getBoundingClientRect();
 
     results.push(
-      rect.top >= 0-errorMargin &&
-        rect.left >= 0-errorMargin &&
+      rect.top >= 0 - errorMargin &&
+        rect.left >= 0 - errorMargin &&
         rect.bottom <=
           (window.innerHeight ||
             document.documentElement
@@ -20,7 +27,6 @@ const isElementInViewport = (els, errorMargin = 0) => {
   }
 
   // Returns true if all elements are in the viewport
-  console.log(results.filter((el) => el).length);
   return results.filter((el) => el).length === els.length;
 };
 
@@ -37,7 +43,17 @@ const compareSides = (els, halfPage) => {
   return +(result >= 0);
 };
 
+/**
+ * Scrolls until all the "Scroll-to" elements passed by param
+ * are visible
+ *
+ * @param {array} els - The array of "Scroll-to" elements
+ */
 const scrollTo = async (els) => {
+  /* There always two "Scroll-to" elements per section. So, if there are more, there's an error
+  that could make the website broke (infinite scrolling)
+  */
+  if(els.length != 2) return;
   const sensibility = 2;
   scrollbar.scrollTop = 0;
   while (!isElementInViewport(els)) {
@@ -48,11 +64,22 @@ const scrollTo = async (els) => {
   checkContentisTotallyHorizontal();
 };
 
-// Event listener handle to local anchors clicks
-document.addEventListener("click", (e) => {
-  const el = e.target;
-  if (el.dataset.role !== "scroll-link") return;
-  const scrollToID = el.dataset.scrollto;
-  const scrollToObjs = document.querySelectorAll(`[data-id="${scrollToID}"]`);
-  scrollTo(scrollToObjs);
+/**
+ * Checks if there is a fragment identifier in the URL and
+ * provokes a scroll intil have the fragment in vp
+ */
+const checkFragmentIdentifierInURL = () => {
+  const hash = location.hash.substring(1);
+  if (!hash.length) return;
+
+  const scrollToEls = document.querySelectorAll(`[data-id="${hash}"]`);
+  scrollTo(scrollToEls);
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  checkFragmentIdentifierInURL();
+});
+
+window.addEventListener("hashchange", () => {
+  checkFragmentIdentifierInURL();
 });
