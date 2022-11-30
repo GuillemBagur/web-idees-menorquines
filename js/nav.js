@@ -13,7 +13,7 @@ for (let key in navLinks) {
   const link = navLinks[key];
   const toRender = `
     <li class="nav__nav-link-li">
-        <a class="nav__nav-link" href="${link}">${linkTitle}</a>
+        <a onclick="toggleOpenNav()" class="nav__nav-link" href="${link}">${linkTitle}</a>
     </li>`;
 
   linksList += toRender;

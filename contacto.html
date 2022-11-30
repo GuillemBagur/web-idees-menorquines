@@ -1,0 +1,106 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idees Menorquines</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/nav.js" defer></script>
+    <script src="js/accessibility.js" defer></script>
+    <script src="js/contact.js" defer></script>
+  </head>
+  <body>
+    <nav id="nav" class="nav"></nav>
+    <div id="wrapper" class="wrapper">
+      <div id="main-content">
+        <section class="section section--no-overflow-y section--no-overflow-x">
+          <h1 class="section__title">
+            <span class="word word--white">Contácta</span>nos
+          </h1>
+          <h3>
+            Llámanos al o envíanos un email a
+            <a href="mailto:info@ideesmenorquines.com"
+              >info@ideesmenorquines.com</a
+            >
+          </h3>
+
+          <div class="section__body section__body--contact">
+            <form id="contact-form" class="contact-form" data-animation="send">
+              <div class="contact-form__inputs-wrapper">
+                <input
+                  id="name"
+                  class="contact-form__input"
+                  type="text"
+                  name="name"
+                  placeholder="Escribe aquí tu nombre..."
+                />
+                <input
+                  id="email"
+                  class="contact-form__input"
+                  type="email"
+                  name="email"
+                  placeholder="Pon aquí tu email..."
+                />
+              </div>
+
+              <textarea
+                id="message"
+                class="contact-form__input contact-form__input--textarea"
+                name="message"
+                placeholder="Cuéntanos todo lo que debamos saber aquí..."
+              ></textarea>
+              <button type="button" id="send-btn" class="btn btn--margin-top-2">
+                Enviar
+              </button>
+            </form>
+
+            <section id="sent" class="form-sent-feedback" data-animation="send">
+              <div class="contact-envelope" data-animation="send">
+                <div class="contact-envelope__flap" data-animation="send"></div>
+                <div class="contact-envelope__pattern-wrapper">
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                  <div class="contact-envelope__pattern"></div>
+                </div>
+                <div class="contact-envelope__body">
+                  <span class="contact-envelope__recipient-info">
+                    <b>Destinatario:</b> <br />
+                    Idees Menorquines <br />
+                    C/Fusters nº 5 - POICI 07760 <br />
+                    Ciutadella de Menorca, Illes Balears <br />
+                  </span>
+                </div>
+              </div>
+
+              <div>
+                <h2>¡Enviado!</h2>
+                <p>
+                  Tu mensaje ha sido enviado con éxito. Te responderemos lo más
+                  rápido posible. ¡Gracias!
+                </p>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer id="footer" class="footer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>

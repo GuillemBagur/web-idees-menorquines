@@ -1,3 +1,8 @@
+/* Send animation timing chain */
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   overscroll-behavior-y: contain;
@@ -7,6 +12,13 @@ body {
   font-family: Calibri, Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
+}
+
+input,
+a,
+button,
+textarea {
+  outline: none;
 }
 
 button {
@@ -144,6 +156,9 @@ a {
   color: #bdbdbd;
   margin-top: 1rem;
 }
+.section__body--contact {
+  padding-top: 2rem;
+}
 .section__main-text {
   position: relative;
   display: block;
@@ -177,6 +192,16 @@ a {
   animation-delay: 3.7s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+.section--no-overflow-y {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.section--no-overflow-x {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .wrapper--main .section {
@@ -381,7 +406,7 @@ a {
   animation-duration: 2.2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 2.4s;
+  animation-delay: 2.4;
   opacity: 0;
   pointer-events: none;
 }
@@ -679,6 +704,7 @@ a {
   position: relative;
   padding: 1rem 1.5rem;
   background-color: #f07d00;
+  border: 0;
   border-radius: 100px;
   color: #f0f0f0;
   box-shadow: 0 12px 20px 1px rgba(0, 0, 0, 0.15);
@@ -769,10 +795,274 @@ a {
   margin-right: 0.5rem;
 }
 
+.contact-form {
+  position: relative;
+  padding: 1rem;
+  border-radius: 2px;
+  background-color: #f0f0f0;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.contact-form.animation {
+  animation-name: contact-form-send;
+}
+
+@keyframes contact-form-send {
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  99% {
+    opacity: 1;
+    transform: translateY(12.3rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(12.3rem);
+  }
+}
+.contact-form__input {
+  border: 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+  margin-bottom: 1rem;
+}
+
+.contact-form__input--textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 5rem;
+  min-height: 5rem;
+}
+
+.contact-form__input--filled {
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+.contact-form__input:focus {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+}
+
+.contact-form__input {
+  display: block;
+  width: 100%;
+}
+
+.form-sent-feedback {
+  position: absolute;
+  width: 90vw;
+  box-sizing: border-box;
+  top: 0;
+  margin-top: 15rem;
+  margin-bottom: 3rem;
+  transform: translateY(45rem);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.form-sent-feedback.animation {
+  animation-name: form-sent-feedback-send;
+}
+
+@keyframes form-sent-feedback-send {
+  0% {
+    transform: translateY(45rem);
+  }
+  100% {
+    transform: translateY(5rem);
+    opacity: 1;
+  }
+}
+.contact-envelope {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box !important;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2.6s;
+}
+
+.contact-envelope.animation {
+  animation-name: contact-envelope-send;
+}
+
+@keyframes contact-envelope-send {
+  0% {
+    transform: none;
+  }
+  40% {
+    transform: translateY(-7rem) scale(0.8);
+  }
+  43% {
+    transform: translateY(-7rem) scale(0.8);
+  }
+  100% {
+    transform: rotate(100deg) translateY(-7rem) translateX(-300%) scale(0.8);
+  }
+}
+.contact-envelope__pattern-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  height: 100%;
+  width: 100%;
+}
+
+.contact-envelope__pattern {
+  height: 220%;
+  width: 2rem;
+  position: absolute;
+  top: -12rem;
+  left: -22rem;
+  background-color: #2323a1;
+}
+
+.contact-envelope__pattern:nth-child(1) {
+  transform: translateX(0rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(2) {
+  transform: translateX(6rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(3) {
+  transform: translateX(12rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(4) {
+  transform: translateX(18rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(5) {
+  transform: translateX(24rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(6) {
+  transform: translateX(30rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(7) {
+  transform: translateX(36rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(8) {
+  transform: translateX(42rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(9) {
+  transform: translateX(48rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(10) {
+  transform: translateX(54rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(11) {
+  transform: translateX(60rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(12) {
+  transform: translateX(66rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(13) {
+  transform: translateX(72rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(14) {
+  transform: translateX(78rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(15) {
+  transform: translateX(84rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(16) {
+  transform: translateX(90rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(17) {
+  transform: translateX(96rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(18) {
+  transform: translateX(102rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(odd) {
+  background-color: #bd0f0f;
+}
+
+.contact-envelope__flap {
+  position: absolute;
+  transform: translateY(-100%);
+  top: 0.5px;
+  left: 0;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  aspect-ratio: 5/1;
+  width: 100%;
+  background-color: inherit;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: bottom;
+  animation-timing-function: ease-in;
+  animation-delay: 1.5s;
+}
+
+.contact-envelope__flap.animation {
+  animation-name: contact-form-flap;
+}
+
+@keyframes contact-form-flap {
+  0% {
+    transform: translateY(-100%) rotateX(0deg);
+  }
+  100% {
+    transform: translateY(-100%) rotateX(90deg);
+  }
+}
+.contact-envelope__body {
+  position: relative;
+  box-sizing: border-box;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  height: 27rem;
+}
+
+.contact-envelope__recipient-info {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: #363636;
+  font-size: 1.2rem;
+}
+
 @media screen and (min-width: 550px) {
   .section {
     width: 80vw;
     max-width: 100%;
+  }
+
+  .section__body--contact {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 80%;
   }
 
   .section__main-text {
@@ -862,6 +1152,35 @@ a {
 
   .card {
     width: 20vw;
+  }
+
+  .contact-form__inputs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-sent-feedback {
+    width: 100%;
+  }
+
+  .contact-form__input--textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 15rem;
+    height: 5rem;
+    min-height: 5rem;
+  }
+
+  @keyframes form-sent-feedback-send {
+    0% {
+      transform: translateY(45rem);
+    }
+    100% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
   }
 }
 
