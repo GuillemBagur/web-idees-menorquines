@@ -1052,6 +1052,28 @@ a {
   font-size: 1.2rem;
 }
 
+.quote {
+  padding: 4rem;
+  background-color: #f07d00;
+  position: fixed;
+  bottom: 0rem;
+  left: 0rem;
+  z-index: 5;
+  transform: rotateZ(50deg) translateX(60rem) rotateZ(-50deg);
+  border-radius: 30% 70% 60% 40%/30% 49% 51% 70%;
+  color: #f0f0f0;
+  text-align: center;
+  width: 10rem;
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.quote.visible {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
 @media screen and (min-width: 550px) {
   .section {
     width: 80vw;
@@ -1171,6 +1193,10 @@ a {
     max-height: 15rem;
     height: 5rem;
     min-height: 5rem;
+  }
+
+  .quote {
+    transform: rotateZ(50deg) translateX(60rem) rotateZ(-50deg);
   }
 
   @keyframes form-sent-feedback-send {

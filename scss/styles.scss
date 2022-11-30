@@ -1009,6 +1009,28 @@ $patternRowWidth: 2rem;
   font-size: 1.2rem;
 }
 
+.quote {
+  padding: 4rem;
+  background-color: $mainColor;
+  position: fixed;
+  bottom: 0rem;
+  left: 0rem;
+  z-index: 5;
+  transform: rotateZ(50deg) translateX(60rem) rotateZ(-50deg);
+  border-radius: 30% 70% 60% 40% / 30% 49% 51% 70%;
+  color: $whiteColor;
+  text-align: center;
+  width: 10rem;
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.quote.visible {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
 @media screen and (min-width: 550px) {
   .section {
     width: 80vw;
@@ -1118,7 +1140,6 @@ $patternRowWidth: 2rem;
     margin-bottom: 1rem;
   }
 
-
   .form-sent-feedback {
     width: 100%;
   }
@@ -1130,14 +1151,16 @@ $patternRowWidth: 2rem;
     height: 5rem;
     min-height: 5rem;
   }
-  
 
+  .quote {
+    transform: rotateZ(50deg) translateX(60rem) rotateZ(-50deg);
+  }
 
   @keyframes form-sent-feedback-send {
     0% {
       transform: translateY(45rem);
     }
-  
+
     100% {
       transform: translateY(0rem);
       opacity: 1;

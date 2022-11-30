@@ -1,5 +1,6 @@
 const spinner = document.getElementById("spinner");
 const centeringTransform = "translate(-50%, -50%)";
+const quote = document.getElementById("quote");
 
 const getRotationAngle = (target) => {
   const obj = window.getComputedStyle(target, null);
@@ -53,54 +54,82 @@ const touchScrollHandler = (e) => {
   lastTouchY = currentTouchY;
 };
 
-const sleep = ms => new Promise(r => setTimeout(r, ms));
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const touchEndHandler = async (e) => {
   const currentTouchY = e.changedTouches[0].clientY;
   const sensibility = 1.5;
-  const friction = .2;
+  const friction = 0.2;
   let diff = lastTouchY - currentTouchY;
-  const direction = diff/Math.abs(diff);
-  while(diff*direction > 0) {
-    diff -= friction*direction;
+  const direction = diff / Math.abs(diff);
+  while (diff * direction > 0) {
+    diff -= friction * direction;
     scrollbar.scrollTop += diff * sensibility;
     await sleep(7);
   }
 
   checkContentisTotallyHorizontal();
   lastTouchY = undefined;
-}
+};
 
-const maxScroll = el => {
+const maxScroll = (el) => {
   return el.scrollHeight - el.clientTop;
-}
-
+};
 
 // Checks if the content is totally horizontal or not.
 // If not, it'll force the rotation until it is.
 const checkContentisTotallyHorizontal = () => {
   const allSections = document.getElementsByClassName("section-wrapper");
-  const sectionDegrees = 360/(allSections.length);
+  const sectionDegrees = 360 / allSections.length;
   const spinner = document.getElementById("spinner");
-  if(getRotationAngle(spinner)%sectionDegrees === 0) return;
-  const degreesQuotient = getRotationAngle(spinner)/sectionDegrees;
+  if (getRotationAngle(spinner) % sectionDegrees === 0) return;
+  const degreesQuotient = getRotationAngle(spinner) / sectionDegrees;
   const nearestExactAngle = Math.round(degreesQuotient);
-  const degreesDiff = nearestExactAngle-degreesQuotient;
-  if(Math.abs(degreesDiff) < .1) {
-    spinner.style.transform = `rotate(${nearestExactAngle * sectionDegrees}deg)`;
+  const degreesDiff = nearestExactAngle - degreesQuotient;
+  if (Math.abs(degreesDiff) < 0.1) {
+    spinner.style.transform = `rotate(${
+      nearestExactAngle * sectionDegrees
+    }deg)`;
   }
-}
-
-
-
+};
 
 document.addEventListener("touchmove", touchScrollHandler);
 document.addEventListener("touchend", touchEndHandler);
 
 const scrollbarHandler = (e) => {
+  showQuote();
   const sensibility = 450 / scrollbar.scrollHeight;
   rotation = e.target.scrollTop * sensibility;
   spinner.style.transform = `rotate(${rotation}deg)`;
 };
 
 scrollbar.addEventListener("scroll", scrollbarHandler);
+
+let quoteTranslate = 90;
+function myFunction(x) {
+  if (x.matches) {
+    quoteTranslate = 66;
+  } else {
+    quoteTranslate = 90;
+  }
+}
+
+var x = window.matchMedia("(min-width: 550px)");
+myFunction(x); // Call listener function at run time
+
+let quoteRotation = -30;
+quote.classList.remove("visible");
+const showQuote = () => {
+  const minScroll = 100;
+  const maxScroll = (scrollbar.scrollHeight * 30) / 100;
+  if (scrollbar.scrollTop < minScroll || scrollbar.scrollTop > maxScroll) {
+    quote.classList.remove("visible");
+    return;
+  }
+
+  quote.classList.add("visible");
+  const sensibility =
+    ((window.innerHeight / window.innerWidth) * 350) / scrollbar.scrollHeight;
+  quoteRotation = scrollbar.scrollTop * sensibility;
+  quote.style.transform = `rotateZ(-${quoteRotation}deg) translateX(${quoteTranslate}vw) rotateZ(${quoteRotation}deg)`;
+};
