@@ -53,7 +53,11 @@ const scrollTo = async (els) => {
   /* There always two "Scroll-to" elements per section. So, if there are more, there's an error
   that could make the website broke (infinite scrolling)
   */
-  if(els.length != 2) return;
+  for(let el of els) {
+    console.log(el.dataset.id);
+  }
+  if (els.length != 2) return;
+  console.log(2);
   const sensibility = 2;
   scrollbar.scrollTop = 0;
   while (!isElementInViewport(els)) {

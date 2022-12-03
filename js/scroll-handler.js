@@ -49,7 +49,7 @@ const touchScrollHandler = (e) => {
   const currentTouchY = e.changedTouches[0].clientY;
   if (!lastTouchY) lastTouchY = currentTouchY;
   const diff = lastTouchY - currentTouchY;
-  const sensibility = 1.5;
+  const sensibility = 1.3;
   scrollbar.scrollTop += diff * sensibility;
   lastTouchY = currentTouchY;
 };

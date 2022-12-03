@@ -1,19 +1,5 @@
-$mainColor: #f07d00;
-$secondaryColor: #cc4b00;
-$bgColor: #212322;
-$whiteColor: #f0f0f0;
-$bodyColor: darken($whiteColor, 20%);
-
-$fonts: Calibri, Arial, Helvetica, sans-serif;
-
-$undarkDuration: 5;
-
+@charset "UTF-8";
 /* Send animation timing chain */
-$envelopeAppear: 2s;
-$cardEnter: 1.5s;
-$flapClose: 1.1s;
-$envelopeSend: 3s;
-
 html {
   scroll-behavior: smooth;
 }
@@ -24,7 +10,7 @@ body {
 }
 
 * {
-  font-family: $fonts;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -47,7 +33,7 @@ button {
 }
 
 a {
-  color: $mainColor;
+  color: #f07d00;
 }
 
 img {
@@ -62,18 +48,18 @@ img {
 
 /* Track */
 *::-webkit-scrollbar-track {
-  background-color: lighten($bgColor, 15%);
+  background-color: #464a48;
 }
 
 /* Handle */
 *::-webkit-scrollbar-thumb {
-  background-color: darken($mainColor, 15%);
+  background-color: #a45500;
   border-radius: 3px;
 }
 
 /* Handle on hover */
 *::-webkit-scrollbar-thumb:hover {
-  background-color: darken($mainColor, 10%);
+  background-color: #bd6200;
 }
 
 a {
@@ -84,9 +70,9 @@ a {
   display: block;
   position: absolute;
   padding: 1rem;
-  background-color: $bgColor;
-  color: $mainColor;
-  border: 3px solid $mainColor;
+  background-color: #212322;
+  color: #f07d00;
+  border: 3px solid #f07d00;
   border-radius: 5px;
   z-index: 15;
   transform: translateY(-100%);
@@ -103,7 +89,7 @@ a {
 .wrapper {
   padding: 0;
   position: relative;
-  background-color: $bgColor;
+  background-color: #212322;
   overflow-x: hidden;
 }
 
@@ -113,19 +99,15 @@ a {
   height: 100%;
 }
 
-$spinnerHeight: 400vh;
-
-$centeringTransform: translate(-50%, -50%);
-
 .spinner-wrapper {
-  height: $spinnerHeight;
+  height: 250vw;
   position: absolute;
   top: -50%;
   left: 50%;
   padding: 0;
   margin: 0;
-  aspect-ratio: 1 / 1;
-  transform: translate(-50%, -60%);
+  aspect-ratio: 1/1;
+  transform: translate(-50%, -65%);
 }
 
 .spinner {
@@ -144,19 +126,16 @@ $centeringTransform: translate(-50%, -50%);
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
 }
-
 .section-wrapper {
   color: black;
   position: absolute;
   list-style: none;
 }
 
-$darkFilter: 10%;
 .section {
   position: relative;
   display: inline-block;
@@ -166,65 +145,58 @@ $darkFilter: 10%;
   padding: 3rem;
   width: 100vw;
   min-height: 100vh;
-  color: $whiteColor;
-
-  &__title {
-    display: block;
-    margin-top: 6rem;
-    margin-bottom: 1rem;
-    font-size: 12.5vw;
-    color: $mainColor;
-  }
-
-  &__subtitle {
-    color: $bodyColor;
-  }
-
-  &__body {
-    color: $bodyColor;
-    margin-top: 1rem;
-  }
-
-  &__body--contact {
-    padding-top: 2rem;
-  }
-
-  &__main-text {
-    position: relative;
-    display: block;
-    text-align: justify;
-    line-height: 1.5rem;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 1rem;
-  }
-
-  &__img {
-    position: relative;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-    height: auto;
-    max-height: 25rem;
-    margin: auto;
-  }
-
-  &__background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    padding: inherit;
-    filter: brightness($darkFilter);
-    color: $bodyColor;
-    animation-name: undark;
-    animation-duration: 3s;
-    animation-delay: 3.7s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
+  color: #f0f0f0;
+}
+.section__title {
+  display: block;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  font-size: 12.5vw;
+  color: #f07d00;
+}
+.section__subtitle {
+  color: #bdbdbd;
+}
+.section__body {
+  color: #bdbdbd;
+  margin-top: 1rem;
+}
+.section__body--contact {
+  padding-top: 2rem;
+}
+.section__main-text {
+  position: relative;
+  display: block;
+  text-align: justify;
+  line-height: 1.5rem;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.section__img {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  height: auto;
+  max-height: 25rem;
+  margin: auto;
+}
+.section__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: inherit;
+  filter: brightness(10%);
+  color: #bdbdbd;
+  animation-name: undark;
+  animation-duration: 3s;
+  animation-delay: 3.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .section--no-overflow-y {
@@ -242,11 +214,11 @@ $darkFilter: 10%;
 }
 
 .word--white {
-  color: $whiteColor;
+  color: #f0f0f0;
 }
 
 .word--orange {
-  color: $mainColor;
+  color: #f07d00;
 }
 
 .section:nth-child(even) .section__main-text {
@@ -259,20 +231,18 @@ $darkFilter: 10%;
 
 @keyframes undark {
   0% {
-    filter: brightness($darkFilter);
+    filter: brightness(10%);
   }
-
   100% {
     filter: none;
   }
 }
-
 .section-wrapper--main {
   position: relative;
 }
 
 .section--main {
-  background-color: darken($bgColor, $darkFilter);
+  background-color: #080909;
 }
 
 .light-effect-wrapper {
@@ -290,7 +260,7 @@ $darkFilter: 10%;
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: #{$undarkDuration}s;
+  animation-delay: 5s;
   pointer-events: none;
   opacity: 1;
   transition: all 0.3s;
@@ -310,102 +280,126 @@ $darkFilter: 10%;
   animation-duration: 1.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-
-  &__bulb {
-    position: relative;
-    height: 5rem;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 0, 0.466);
-  }
-
-  &__wire {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 30%;
-    aspect-ratio: 2 / 3;
-    border: 1px solid orange;
-  }
-
-  &__metal {
-    position: absolute;
-    bottom: -2.2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-    width: 50%;
-    aspect-ratio: 1 / 1;
-    background-color: grey;
-  }
-
-  &__rays-wrapper {
-    position: absolute;
-    left: 0%;
-    list-style-type: none;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    transform: translateY(20%) translateX(0.17rem) rotate(-100deg);
-  }
-
-  &__ray {
-    position: absolute;
-    transform-origin: top;
-    top: 50%;
-    left: 50%;
-    background-color: rgba(253, 137, 43, 0.116);
-    height: 30rem;
-    width: 2rem;
-    backdrop-filter: brightness(10);
-    clip-path: polygon(25% 0, 75% 0, 100% 100%, 0 100%);
-    animation-name: light-ray-expand;
-    animation-delay: 0.5s;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-    opacity: 0;
-  }
-
-  $raysNum: 9;
-  $raysRotation: calc(180deg / $raysNum);
-  @for $i from 0 through $raysNum {
-    &__ray:nth-child(#{$i + 1}) {
-      transform: rotate(calc(-1 * $i) * $raysRotation) translateY(3.1rem);
-    }
-  }
+}
+.light-bulb__bulb {
+  position: relative;
+  height: 5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 0, 0.466);
+}
+.light-bulb__wire {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  aspect-ratio: 2/3;
+  border: 1px solid orange;
+}
+.light-bulb__metal {
+  position: absolute;
+  bottom: -2.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 50%;
+  aspect-ratio: 1/1;
+  background-color: grey;
+}
+.light-bulb__rays-wrapper {
+  position: absolute;
+  left: 0%;
+  list-style-type: none;
+  width: 100%;
+  aspect-ratio: 1/1;
+  transform: translateY(20%) translateX(0.17rem) rotate(-100deg);
+}
+.light-bulb__ray {
+  position: absolute;
+  transform-origin: top;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(253, 137, 43, 0.116);
+  height: 30rem;
+  width: 2rem;
+  backdrop-filter: brightness(10);
+  clip-path: polygon(25% 0, 75% 0, 100% 100%, 0 100%);
+  animation-name: light-ray-expand;
+  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 0;
+}
+.light-bulb__ray:nth-child(1) {
+  transform: rotate(0deg) translateY(3.1rem);
+}
+.light-bulb__ray:nth-child(2) {
+  transform: rotate(-20deg) translateY(3.1rem);
+}
+.light-bulb__ray:nth-child(3) {
+  transform: rotate(-40deg) translateY(3.1rem);
+}
+.light-bulb__ray:nth-child(4) {
+  transform: rotate(-60deg) translateY(3.1rem);
+}
+.light-bulb__ray:nth-child(5) {
+  transform: rotate(-80deg) translateY(3.1rem);
+}
+.light-bulb__ray:nth-child(6) {
+  transform: rotate(-100deg) translateY(3.1rem);
+}
+.light-bulb__ray:nth-child(7) {
+  transform: rotate(-120deg) translateY(3.1rem);
+}
+.light-bulb__ray:nth-child(8) {
+  transform: rotate(-140deg) translateY(3.1rem);
+}
+.light-bulb__ray:nth-child(9) {
+  transform: rotate(-160deg) translateY(3.1rem);
+}
+.light-bulb__ray:nth-child(10) {
+  transform: rotate(-180deg) translateY(3.1rem);
 }
 
 @keyframes light-bulb-appear {
   0% {
     transform: translate(-50%, -20%);
   }
-
   100% {
     transform: translate(-50%, -50%);
   }
 }
-
 @keyframes light-ray-expand {
   0% {
     opacity: 0;
     clip-path: polygon(25% 0, 75% 0, 100% 0, 0 0);
   }
-
   100% {
     opacity: 1;
     clip-path: polygon(25% 0, 75% 0, 100% 100%, 0 100%);
   }
 }
+.section-wrapper:nth-child(1) {
+  transform: rotate(0deg) translateY(122vw);
+}
 
-$sectionsNum: 4;
-$sectionRotation: calc(360deg / $sectionsNum);
-@for $i from 0 through $sectionsNum {
-  .section-wrapper:nth-child(#{$i + 1}) {
-    transform: rotate($i * $sectionRotation)
-      translateY(calc($spinnerHeight/2)-3);
-  }
+.section-wrapper:nth-child(2) {
+  transform: rotate(90deg) translateY(122vw);
+}
+
+.section-wrapper:nth-child(3) {
+  transform: rotate(180deg) translateY(122vw);
+}
+
+.section-wrapper:nth-child(4) {
+  transform: rotate(270deg) translateY(122vw);
+}
+
+.section-wrapper:nth-child(5) {
+  transform: rotate(360deg) translateY(122vw);
 }
 
 .flash-effect {
@@ -416,12 +410,12 @@ $sectionRotation: calc(360deg / $sectionsNum);
   top: 0;
   left: 0;
   transform: translateY(-50%);
-  background-color: rgb(228, 228, 228);
+  background-color: #e4e4e4;
   animation-name: flash-appear;
   animation-duration: 2.2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: $undarkDuration - 2.6;
+  animation-delay: 2.4;
   opacity: 0;
   pointer-events: none;
 }
@@ -447,7 +441,7 @@ $sectionRotation: calc(360deg / $sectionsNum);
   position: absolute;
   bottom: 30%;
   height: 2rem;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
 }
 
 .scrollto--left {
@@ -470,20 +464,16 @@ $sectionRotation: calc(360deg / $sectionsNum);
   0% {
     opacity: 0;
   }
-
   50% {
     opacity: 1;
   }
-
   70% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }
 }
-
 .nav {
   position: fixed;
   display: flex;
@@ -503,7 +493,7 @@ $sectionRotation: calc(360deg / $sectionsNum);
 
 .nav__logo {
   height: 4rem;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
 }
 
 .nav__links-list {
@@ -535,10 +525,24 @@ $sectionRotation: calc(360deg / $sectionsNum);
   animation-fill-mode: forwards;
 }
 
-@for $i from 1 through 5 {
-  .nav__nav-link-li:nth-child(#{$i}) {
-    animation-delay: #{$i * 60}ms;
-  }
+.nav__nav-link-li:nth-child(1) {
+  animation-delay: 60ms;
+}
+
+.nav__nav-link-li:nth-child(2) {
+  animation-delay: 120ms;
+}
+
+.nav__nav-link-li:nth-child(3) {
+  animation-delay: 180ms;
+}
+
+.nav__nav-link-li:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.nav__nav-link-li:nth-child(5) {
+  animation-delay: 300ms;
 }
 
 .active .nav__nav-link-li {
@@ -552,17 +556,15 @@ $sectionRotation: calc(360deg / $sectionsNum);
     opacity: 0;
     transition: all 1s;
   }
-
   100% {
     transform: none;
     opacity: 1;
   }
 }
-
 .nav__nav-link {
   position: relative;
   display: inline-block;
-  color: $whiteColor;
+  color: #f0f0f0;
 }
 
 .nav__nav-link::after {
@@ -573,7 +575,7 @@ $sectionRotation: calc(360deg / $sectionsNum);
   width: 100%;
   height: 100%;
   max-height: 0;
-  background-color: $mainColor;
+  background-color: #f07d00;
   border-radius: 5px;
   z-index: -1;
   transition: all 0.2s;
@@ -593,7 +595,7 @@ $sectionRotation: calc(360deg / $sectionsNum);
   top: 50%;
   transform: translateY(-50%);
   width: 2rem;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 3/2;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -602,7 +604,7 @@ $sectionRotation: calc(360deg / $sectionsNum);
 .hamburger__bar {
   width: 100%;
   height: 3px;
-  background-color: $whiteColor;
+  background-color: #f0f0f0;
   border-radius: 10px;
   transform-origin: 0.2rem;
   transition: all 0.3s;
@@ -645,7 +647,7 @@ $sectionRotation: calc(360deg / $sectionsNum);
 }
 
 .figure {
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 3/2;
   margin: auto;
   margin-bottom: 2rem;
 }
@@ -659,7 +661,7 @@ $sectionRotation: calc(360deg / $sectionsNum);
 
 .figure__legend {
   text-align: center;
-  color: $whiteColor;
+  color: #f0f0f0;
   margin-top: 0.5rem;
 }
 
@@ -679,17 +681,15 @@ $sectionRotation: calc(360deg / $sectionsNum);
   max-width: 25%;
   border-radius: 20px;
   overflow: hidden;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
   transition: all 0.3s;
-
-  &__link {
-    display: flex;
-  }
-
-  &__logo {
-    height: 100%;
-    width: 100%;
-  }
+}
+.catalog__link {
+  display: flex;
+}
+.catalog__logo {
+  height: 100%;
+  width: 100%;
 }
 
 .catalog:hover {
@@ -720,13 +720,13 @@ $sectionRotation: calc(360deg / $sectionsNum);
   display: inline-block;
   position: relative;
   padding: 1rem 1.5rem;
-  background-color: $mainColor;
+  background-color: #f07d00;
   border: 0;
   border-radius: 100px;
-  color: $whiteColor;
+  color: #f0f0f0;
   box-shadow: 0 12px 20px 1px rgba(0, 0, 0, 0.15);
   text-align: center;
-  border: 3px solid $mainColor;
+  border: 3px solid #f07d00;
 }
 
 .btn--w-icon {
@@ -735,9 +735,9 @@ $sectionRotation: calc(360deg / $sectionsNum);
 }
 
 .btn--white {
-  background-color: $whiteColor;
-  border: 3px solid $whiteColor;
-  color: $mainColor;
+  background-color: #f0f0f0;
+  border: 3px solid #f0f0f0;
+  color: #f07d00;
 }
 
 .btn--margin-top-2 {
@@ -754,7 +754,7 @@ $sectionRotation: calc(360deg / $sectionsNum);
 
 .btn--secondary {
   background-color: transparent;
-  color: $mainColor;
+  color: #f07d00;
   box-sizing: border-box;
 }
 
@@ -767,42 +767,38 @@ $sectionRotation: calc(360deg / $sectionsNum);
 }
 
 .card {
-  $backcroundColor: $mainColor;
   padding: 0.7rem;
   padding-bottom: 1.5rem;
   width: 75%;
   margin: auto;
   margin-bottom: 2rem;
-  background-color: $backcroundColor;
+  background-color: #f07d00;
   border-radius: 7px;
-  color: $whiteColor;
-
-  &__img {
-    border-radius: 5px;
-    width: 100%;
-    aspect-ratio: 5 / 2;
-    object-fit: cover;
-    box-shadow: 0 5px 20px 1px mix(rgba(0, 0, 0, 0.5), $mainColor);
-  }
-
-  &__title {
-    display: block;
-    margin-top: 1rem;
-    margin-bottom: 0.7rem;
-  }
-
-  &__p {
-    text-align: justify;
-    color: rgba($whiteColor, 0.8);
-  }
+  color: #f0f0f0;
+}
+.card__img {
+  border-radius: 5px;
+  width: 100%;
+  aspect-ratio: 5/2;
+  object-fit: cover;
+  box-shadow: 0 5px 20px 1px rgba(180, 94, 0, 0.75);
+}
+.card__title {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+}
+.card__p {
+  text-align: justify;
+  color: rgba(240, 240, 240, 0.8);
 }
 
 .card:nth-child(even) {
-  background-color: darken($mainColor, 20%);
+  background-color: #8a4800;
 }
 
 .card:nth-child(even) .btn {
-  color: darken($mainColor, 20%);
+  color: #8a4800;
 }
 
 .instagram-media {
@@ -815,10 +811,9 @@ $sectionRotation: calc(360deg / $sectionsNum);
 }
 
 .icon {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
   display: inline-block;
-  filter: invert(100%) sepia(0%) saturate(3735%) hue-rotate(46deg)
-    brightness(114%) contrast(88%);
+  filter: invert(100%) sepia(0%) saturate(3735%) hue-rotate(46deg) brightness(114%) contrast(88%);
 }
 
 .icon--mr-05 {
@@ -829,9 +824,9 @@ $sectionRotation: calc(360deg / $sectionsNum);
   position: relative;
   padding: 1rem;
   border-radius: 2px;
-  background-color: $whiteColor;
-  animation-duration: $cardEnter;
-  animation-delay: $envelopeAppear - 1;
+  background-color: #f0f0f0;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -845,18 +840,15 @@ $sectionRotation: calc(360deg / $sectionsNum);
     opacity: 1;
     transform: none;
   }
-
   99% {
     opacity: 1;
     transform: translateY(12.3rem);
   }
-
   100% {
     opacity: 0;
     transform: translateY(12.3rem);
   }
 }
-
 .contact-form__input {
   border: 0;
   padding: 0.5rem;
@@ -897,7 +889,7 @@ $sectionRotation: calc(360deg / $sectionsNum);
   margin-top: 15rem;
   margin-bottom: 3rem;
   transform: translateY(45rem);
-  animation-duration: $envelopeAppear;
+  animation-duration: 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -910,23 +902,21 @@ $sectionRotation: calc(360deg / $sectionsNum);
   0% {
     transform: translateY(45rem);
   }
-
   100% {
     transform: translateY(5rem);
     opacity: 1;
   }
 }
-
 .contact-envelope {
   position: absolute;
   width: 100%;
   box-sizing: border-box !important;
   padding: 2rem;
-  background-color: $whiteColor;
-  animation-duration: $envelopeSend;
+  background-color: #f0f0f0;
+  animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: $envelopeAppear + $cardEnter + $flapClose - 2s;
+  animation-delay: 2.6s;
 }
 
 .contact-envelope.animation {
@@ -937,49 +927,109 @@ $sectionRotation: calc(360deg / $sectionsNum);
   0% {
     transform: none;
   }
-
   40% {
     transform: translateY(-7rem) scale(0.8);
   }
-
   43% {
     transform: translateY(-7rem) scale(0.8);
   }
-
   100% {
     transform: rotate(100deg) translateY(-7rem) translateX(-300%) scale(0.8);
   }
 }
-
 .contact-envelope__pattern-wrapper {
   position: absolute;
   top: 0;
   left: 0;
   overflow: hidden;
-  background-color: $whiteColor;
+  background-color: #f0f0f0;
   height: 100%;
   width: 100%;
 }
 
-$patternRowWidth: 2rem;
-
 .contact-envelope__pattern {
   height: 220%;
-  width: $patternRowWidth;
+  width: 2rem;
   position: absolute;
   top: -12rem;
   left: -22rem;
-  background-color: rgb(35, 35, 161);
+  background-color: #2323a1;
 }
 
-@for $i from 0 through 17 {
-  .contact-envelope__pattern:nth-child(#{$i + 1}) {
-    transform: translateX(#{3 * $i * $patternRowWidth}) rotate(45deg);
-  }
+.contact-envelope__pattern:nth-child(1) {
+  transform: translateX(0rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(2) {
+  transform: translateX(6rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(3) {
+  transform: translateX(12rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(4) {
+  transform: translateX(18rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(5) {
+  transform: translateX(24rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(6) {
+  transform: translateX(30rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(7) {
+  transform: translateX(36rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(8) {
+  transform: translateX(42rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(9) {
+  transform: translateX(48rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(10) {
+  transform: translateX(54rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(11) {
+  transform: translateX(60rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(12) {
+  transform: translateX(66rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(13) {
+  transform: translateX(72rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(14) {
+  transform: translateX(78rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(15) {
+  transform: translateX(84rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(16) {
+  transform: translateX(90rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(17) {
+  transform: translateX(96rem) rotate(45deg);
+}
+
+.contact-envelope__pattern:nth-child(18) {
+  transform: translateX(102rem) rotate(45deg);
 }
 
 .contact-envelope__pattern:nth-child(odd) {
-  background-color: rgb(189, 15, 15);
+  background-color: #bd0f0f;
 }
 
 .contact-envelope__flap {
@@ -988,7 +1038,7 @@ $patternRowWidth: 2rem;
   top: 0.5px;
   left: 0;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  aspect-ratio: 5 / 1;
+  aspect-ratio: 5/1;
   width: 100%;
   background-color: inherit;
   animation-duration: 1s;
@@ -996,7 +1046,7 @@ $patternRowWidth: 2rem;
   animation-fill-mode: forwards;
   transform-origin: bottom;
   animation-timing-function: ease-in;
-  animation-delay: $envelopeAppear + $cardEnter - 2s;
+  animation-delay: 1.5s;
 }
 
 .contact-envelope__flap.animation {
@@ -1007,17 +1057,15 @@ $patternRowWidth: 2rem;
   0% {
     transform: translateY(-100%) rotateX(0deg);
   }
-
   100% {
     transform: translateY(-100%) rotateX(90deg);
   }
 }
-
 .contact-envelope__body {
   position: relative;
   box-sizing: border-box;
   padding: 2rem;
-  background-color: $whiteColor;
+  background-color: #f0f0f0;
   height: 27rem;
 }
 
@@ -1031,14 +1079,14 @@ $patternRowWidth: 2rem;
 
 .quote {
   padding: 4rem;
-  background-color: $mainColor;
+  background-color: #f07d00;
   position: fixed;
   bottom: 0rem;
   left: 0rem;
   z-index: 5;
   transform: rotateZ(50deg) translateX(60rem) rotateZ(-50deg);
-  border-radius: 30% 70% 60% 40% / 30% 49% 51% 70%;
-  color: $whiteColor;
+  border-radius: 30% 70% 60% 40%/30% 49% 51% 70%;
+  color: #f0f0f0;
   text-align: center;
   width: 10rem;
   font-size: 1.4rem;
@@ -1057,7 +1105,7 @@ $patternRowWidth: 2rem;
   padding: 2rem;
   box-sizing: border-box;
   border-radius: 5px;
-  background-color: $whiteColor;
+  background-color: #f0f0f0;
   width: 18rem;
   min-height: 7rem;
 }
@@ -1083,16 +1131,16 @@ $patternRowWidth: 2rem;
   left: 50%;
   border-radius: 50%;
   border-bottom-right-radius: 0;
-  border: 5px solid $whiteColor;
+  border: 5px solid #f0f0f0;
   transform: translateY(-50%) translateX(-50%);
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
 }
 
 .review__author-name {
   display: block;
   margin-top: 1.5rem;
   text-align: center;
-  color: $bgColor;
+  color: #212322;
 }
 
 .review__text {
@@ -1100,7 +1148,7 @@ $patternRowWidth: 2rem;
   position: relative;
   width: 100%;
   margin-top: 1.5rem;
-  color: lighten($bgColor, 20%);
+  color: #535855;
 }
 
 .stars-wrapper {
@@ -1119,16 +1167,14 @@ $patternRowWidth: 2rem;
 }
 
 .star__icon {
-  filter: invert(49%) sepia(72%) saturate(1073%) hue-rotate(1deg)
-    brightness(95%) contrast(101%);
+  filter: invert(49%) sepia(72%) saturate(1073%) hue-rotate(1deg) brightness(95%) contrast(101%);
   position: relative;
   width: 2rem;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
 }
 
 .star--empty .star__icon--negative {
-  filter: invert(100%) sepia(15%) saturate(7407%) hue-rotate(289deg)
-    brightness(128%) contrast(85%);
+  filter: invert(100%) sepia(15%) saturate(7407%) hue-rotate(289deg) brightness(128%) contrast(85%);
   position: absolute;
   top: 52%;
   left: 40%;
@@ -1138,7 +1184,8 @@ $patternRowWidth: 2rem;
 
 @media screen and (min-width: 550px) {
   .spinner-wrapper {
-    transform: translate(-50%, -60%);
+    height: 300vh;
+    transform: translate(-50%, -50%);
   }
 
   .section {
@@ -1206,7 +1253,7 @@ $patternRowWidth: 2rem;
     max-width: initial;
     border-radius: 20px;
     overflow: hidden;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
   }
 
   .map-image-wrapper {
@@ -1229,7 +1276,7 @@ $patternRowWidth: 2rem;
   }
 
   .map-image-wrapper .section__img,
-  .figure {
+.figure {
     max-height: 70vh;
   }
 
@@ -1274,40 +1321,36 @@ $patternRowWidth: 2rem;
     0% {
       transform: translateY(45rem);
     }
-
     100% {
       transform: translateY(0rem);
       opacity: 1;
     }
   }
 }
-
 @media screen and (min-width: 800px) {
   .spinner-wrapper {
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -40%);
   }
 }
-
 @media screen and (min-width: 1000px) {
   .spinner-wrapper {
-    transform: translate(-50%, -58%);
+    transform: translate(-50%, -47%);
   }
 }
-
 @media screen and (min-width: 1200px) {
   .spinner-wrapper {
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -56%);
   }
 }
-
 @media screen and (min-width: 1350px) {
   .spinner-wrapper {
-    transform: translate(-50%, -63%);
-  }
-}
-
-@media screen and (min-width: 1500px) {
-  .spinner-wrapper {
     transform: translate(-50%, -60%);
   }
 }
+@media screen and (min-width: 1500px) {
+  .spinner-wrapper {
+    transform: translate(-50%, -65%);
+  }
+}
+
+/*# sourceMappingURL=styles%20copy.css.map */

@@ -15,6 +15,7 @@
     <script src="js/display-catalogs.js" defer></script>
     <script src="js/accessibility.js" defer></script>
     <script src="js/slider.js" defer></script>
+    <script src="js/reviews.js" defer></script>
     <script async src="//www.instagram.com/embed.js" defer></script>
   </head>
   <body>
@@ -76,10 +77,6 @@
               <a data-id="catalogo" class="scrollto scrollto--left"></a>
               <a data-id="catalogo" class="scrollto scrollto--right"></a>
               <h2 class="section__title">Catálogo</h2>
-              <!-- <h3>
-                Desde aquí puedes ver todos los catálogos de nuestros
-                proveedores
-              </h3> -->
 
               <div class="section__body">
                 <p class="section__main-text">
@@ -91,8 +88,6 @@
 
           <li class="section-wrapper">
             <section class="section">
-              <a data-id="prova" class="scrollto scrollto--left"></a>
-              <a data-id="prova" class="scrollto scrollto--right"></a>
               <h2 class="section__title">
                 <span class="word word--white">Nuestros</span> trabajos
               </h2>
@@ -169,6 +164,40 @@
                 </div>
 
               </div>
+            </section>
+          </li>
+
+          <li class="section-wrapper">
+            <section class="section">
+              <a data-id="reviews" class="scrollto scrollto--left"></a>
+              <a data-id="reviews" class="scrollto scrollto--right"></a>
+              <h2 class="section__title">¿Qué piensan nuestros clientes?</h2>
+
+              <div class="section__body">
+                <p class="section__main-text">
+                  <div id="slider-2" class="slider">
+                    <button
+                      onclick="slideScroll(this)"
+                      data-direction="1"
+                      class="slider__nav slider__nav--left"
+                    >
+                      <
+                    </button>
+                    <button
+                      onclick="slideScroll(this)"
+                      data-direction="-1"
+                      class="slider__nav slider__nav--right"
+                    >
+                      >
+                    </button>
+                    <div id="reviews-list" class="slider__slides-wrapper reviews-list">
+
+                  </div>
+                </p>
+                
+              </div>
+              </div>
+              
             </section>
           </li>
         </ul>
