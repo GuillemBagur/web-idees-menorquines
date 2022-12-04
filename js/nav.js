@@ -21,7 +21,7 @@ for (let key in navLinks) {
 
 document.getElementById("nav").innerHTML = `
 <a class="nav__home-link" href="/index.html">
-<img class="nav__logo" src="imgs/logo.png"/></a>
+<img class="nav__logo" src="imgs/logo.png" alt="Nuestro logotipo" /></a>
   <button class="hamburger" id="hamburger">
     <div class="hamburger__bar hamburger__bar--1"></div>
     <div class="hamburger__bar hamburger__bar--2"></div>
@@ -47,6 +47,8 @@ const createTranspLayerToClick = (els) => {
 };
 
 const toggleOpenNav = () => {
+  // Media query
+  if(window.innerWidth > 550) return;
   const linksList = document.getElementById("links-list");
   linksList.classList.toggle("active");
   const hamburger = document.getElementById("hamburger");

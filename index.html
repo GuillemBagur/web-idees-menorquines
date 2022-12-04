@@ -4,18 +4,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Idees Menorquines</title>
+    
+    <link
+      rel="stylesheet"
+      href="/node_modules/owl.carousel/dist/assets/owl.carousel.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/slider.css" />
+    <script src="/node_modules/jquery/dist/jquery.js" defer></script>
     <script src="js/hide-effects.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
     <script src="js/type.js" defer></script>
     <script src="js/put-on-vp.js" defer></script>
     <script src="js/scroll-handler.js" defer></script>
     <script src="js/nav.js" defer></script>
+    <script src="js/reviews.js" defer></script>
     <script src="js/display-catalogs.js" defer></script>
     <script src="js/accessibility.js" defer></script>
-    <script src="js/slider.js" defer></script>
-    <script src="js/reviews.js" defer></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js" defer></script>
+    <script src="js/swiper.js" defer></script>
+    
     <script async src="//www.instagram.com/embed.js" defer></script>
   </head>
   <body>
@@ -24,12 +32,12 @@
       <div class="scrollbar-wrapper" id="scrollbar">
         <div class="scrollbar" id="scrollbar-height"></div>
       </div>
-      <span id="quote" class="quote">
+      <span id="quote" class="quote" onclick="hide(this)">
         Más de 1.000
         pymes han confiado en
         nosotros para el diseño de su marca.
       </span>
-      <div id="main-content" class="spinner-wrapper">
+      <main id="main-content" class="spinner-wrapper">
         
         <ul id="spinner" class="spinner">
           <li
@@ -92,75 +100,115 @@
                 <span class="word word--white">Nuestros</span> trabajos
               </h2>
               <div class="section__body">
-                <div id="slider-1" class="slider">
-                  <button
-                    onclick="slideScroll(this)"
-                    data-direction="1"
-                    class="slider__nav slider__nav--left"
-                  >
-                    <
-                  </button>
-                  <button
-                    onclick="slideScroll(this)"
-                    data-direction="-1"
-                    class="slider__nav slider__nav--right"
-                  >
-                    >
-                  </button>
-                  <div class="slider__slides-wrapper">
+                  <div id="slider-1" class="slider owl-carousel owl-theme">
                     <div class="slider__slide">
                       <blockquote
                         class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/p/Ck-1Gizt4cn/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        data-instgrm-permalink="https://www.instagram.com/p/Ci1yKjtKKFz/?utm_source=ig_embed&amp;utm_campaign=loading"
                       ></blockquote>
                     </div>
             
                     <div class="slider__slide">
                       <blockquote
                         class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/p/Ck-1Gizt4cn/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        data-instgrm-permalink="https://www.instagram.com/p/CgmOZrdqzQr/?utm_source=ig_embed&amp;utm_campaign=loading"
                       ></blockquote>
                     </div>
             
                     <div class="slider__slide">
                       <blockquote
                         class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/p/Ck-1Gizt4cn/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        data-instgrm-permalink="https://www.instagram.com/p/CdNRaDCKblf/?utm_source=ig_embed&amp;utm_campaign=loading"
                       ></blockquote>
                     </div>
             
                     <div class="slider__slide">
                       <blockquote
                         class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/p/Ck-1Gizt4cn/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        data-instgrm-permalink="https://www.instagram.com/p/CgMOTX7jV71/?utm_source=ig_embed&amp;utm_campaign=loading"
                       ></blockquote>
                     </div>
             
                     <div class="slider__slide">
                       <blockquote
                         class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/p/Ck-1Gizt4cn/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        data-instgrm-permalink="https://www.instagram.com/p/CfoLN4FqZ8B/?utm_source=ig_embed&amp;utm_campaign=loading"
                       ></blockquote>
                     </div>
             
                     <div class="slider__slide">
                       <blockquote
                         class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/p/Ck-1Gizt4cn/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        data-instgrm-permalink="https://www.instagram.com/p/CfWqXs3qwSO/?utm_source=ig_embed&amp;utm_campaign=loading"
                       ></blockquote>
                     </div>
             
                     <div class="slider__slide">
                       <blockquote
                         class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/p/Ck-1Gizt4cn/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        data-instgrm-permalink="https://www.instagram.com/p/Ccpqs0FqKxk/?utm_source=ig_embed&amp;utm_campaign=loading"
+                      ></blockquote>
+                    </div>
+
+                    <div class="slider__slide">
+                      <blockquote
+                        class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/p/CcSRXY-OEM7/?utm_source=ig_embed&amp;utm_campaign=loading"
+                      ></blockquote>
+                    </div>
+
+                    <div class="slider__slide">
+                      <blockquote
+                        class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/p/CcXXP68O933/?utm_source=ig_embed&amp;utm_campaign=loading"
+                      ></blockquote>
+                    </div>
+
+                    <div class="slider__slide">
+                      <blockquote
+                        class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/p/CcNPT82KwOq/?utm_source=ig_embed&amp;utm_campaign=loading"
+                      ></blockquote>
+                    </div>
+
+                    <div class="slider__slide">
+                      <blockquote
+                        class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/p/CZyvwfDKkKM/?utm_source=ig_embed&amp;utm_campaign=loading"
+                      ></blockquote>
+                    </div>
+
+                    <div class="slider__slide">
+                      <blockquote
+                        class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/p/CbfkzZSKrxA/?utm_source=ig_embed&amp;utm_campaign=loading"
+                      ></blockquote>
+                    </div>
+
+                    <div class="slider__slide">
+                      <blockquote
+                        class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/p/CZ_goJ1K_iv/?utm_source=ig_embed&amp;utm_campaign=loading"
+                      ></blockquote>
+                    </div>
+
+                    <div class="slider__slide">
+                      <blockquote
+                        class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/p/CY3SawFKz8C/?utm_source=ig_embed&amp;utm_campaign=loading"
+                      ></blockquote>
+                    </div>
+
+                    <div class="slider__slide">
+                      <blockquote
+                        class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/p/CYirmP2K3ve/?utm_source=ig_embed&amp;utm_campaign=loading"
                       ></blockquote>
                     </div>
                   </div>
-                </div>
 
                 <div class="btn-wrapper btn-wrapper--center"><a target="_blank" class="btn btn--w-icon btn--margin-top-2" href="https://www.instagram.com/ideesmenorquines/">
-                  <img class="icon icon--mr-05" width="24" src="https://unpkg.com/@icon/icofont/icons/instagram.svg" />Ver más</a>
+                  <img class="icon icon--mr-05" width="24" src="https://unpkg.com/@icon/icofont/icons/instagram.svg" alt="Icono de Instagram" />Ver más</a>
                 </div>
 
               </div>
@@ -175,23 +223,7 @@
 
               <div class="section__body">
                 <p class="section__main-text">
-                  <div id="slider-2" class="slider">
-                    <button
-                      onclick="slideScroll(this)"
-                      data-direction="1"
-                      class="slider__nav slider__nav--left"
-                    >
-                      <
-                    </button>
-                    <button
-                      onclick="slideScroll(this)"
-                      data-direction="-1"
-                      class="slider__nav slider__nav--right"
-                    >
-                      >
-                    </button>
-                    <div id="reviews-list" class="slider__slides-wrapper reviews-list">
-
+                  <div id="reviews-list" class="slider owl-carousel owl-theme owl-loaded owl-drag">
                   </div>
                 </p>
                 
@@ -201,7 +233,7 @@
             </section>
           </li>
         </ul>
-      </div>
+      </main>
     </div>
 
     <footer id="footer" class="footer"></footer>

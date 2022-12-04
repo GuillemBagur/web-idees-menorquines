@@ -726,8 +726,21 @@ $sectionRotation: calc(360deg / $sectionsNum);
   color: $whiteColor;
   box-shadow: 0 12px 20px 1px rgba(0, 0, 0, 0.15);
   text-align: center;
+  user-select: none;
   border: 3px solid $mainColor;
+  transition: all .2s;
 }
+
+.btn:hover {
+  transform: scale(1.04);
+  transition: all .2s;
+}
+
+.btn:active {
+  transform: scale(.98);
+  transition: all .1s;
+}
+
 
 .btn--w-icon {
   display: inline-flex;
@@ -756,6 +769,10 @@ $sectionRotation: calc(360deg / $sectionsNum);
   background-color: transparent;
   color: $mainColor;
   box-sizing: border-box;
+}
+
+.btn--secondary:hover {
+  background-color: rgba($mainColor, .03);
 }
 
 .cards-list {
@@ -1060,16 +1077,7 @@ $patternRowWidth: 2rem;
   background-color: $whiteColor;
   width: 18rem;
   min-height: 7rem;
-}
-
-.review::after {
-  content: "“";
-  display: none;
-  left: 0;
-  position: absolute;
-  top: 0;
-  font-size: 15rem;
-  color: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
 }
 
 .review__author {
@@ -1077,14 +1085,13 @@ $patternRowWidth: 2rem;
 }
 
 .review__author-img {
-  height: 4rem;
   position: absolute;
   top: 0;
   left: 50%;
   border-radius: 50%;
   border-bottom-right-radius: 0;
-  border: 5px solid $whiteColor;
-  transform: translateY(-50%) translateX(-50%);
+  border: 15px solid $whiteColor;
+  transform: translateY(-50%) translateX(-50%) scale(.3);
   aspect-ratio: 1 / 1;
 }
 
@@ -1126,14 +1133,13 @@ $patternRowWidth: 2rem;
   aspect-ratio: 1 / 1;
 }
 
-.star--empty .star__icon--negative {
-  filter: invert(100%) sepia(15%) saturate(7407%) hue-rotate(289deg)
-    brightness(128%) contrast(85%);
-  position: absolute;
-  top: 52%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  width: 1.3rem;
+.star--empty .star__icon {
+  filter: invert(100%) sepia(0%) saturate(1409%) hue-rotate(207deg) brightness(108%) contrast(70%);
+}
+
+.owl-carousel {
+  width: 100%;
+  height: 300px;
 }
 
 @media screen and (min-width: 550px) {

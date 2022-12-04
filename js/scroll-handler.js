@@ -46,6 +46,10 @@ document.addEventListener("wheel", mouseScrollHandler, { passive: false });
 
 let lastTouchY = undefined;
 const touchScrollHandler = (e) => {
+  if(e.target.classList.contains("slider__slide")) {
+    return;
+  }
+  
   const currentTouchY = e.changedTouches[0].clientY;
   if (!lastTouchY) lastTouchY = currentTouchY;
   const diff = lastTouchY - currentTouchY;

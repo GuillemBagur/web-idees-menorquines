@@ -96,7 +96,7 @@ const displayCatalogs = () => {
     const htmlCatalog = `
     <li class="catalog" title="${catalog.title}">
         <a class="catalog__link" href="${catalog.url}" target="_blank">
-            <img class="catalog__logo" src="${catalog.img}" />
+            <img class="catalog__logo" src="${catalog.img}" alt="Logo de nuestro proveedor ${catalog.title}" />
         </a>
     </li>
     `;

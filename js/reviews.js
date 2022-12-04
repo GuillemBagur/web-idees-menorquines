@@ -6,34 +6,33 @@ const getJSON = async (url) => {
 
 const sortBy = (param, array, orderBy = 1) => {
   return array.sort((a, b) => orderBy * (Number(a[param]) - Number(b[param])));
-}
+};
 
 const setFullEmptyStar = (num, starsNum) => {
-  if(num < starsNum) {
+  if (num < starsNum) {
     return `
       <div class="star star--full">
-        <img class="icon icon--mr-05 star__icon" src="https://unpkg.com/@icon/icofont/icons/star.svg" />
+        <img class="icon icon--mr-05 star__icon" src="https://unpkg.com/@icon/icofont/icons/star.svg" alt="Icono estrella" />
       </div>
     `;
   }
 
   return `
       <div class="star star--empty">
-        <img class="icon icon--mr-05 star__icon" src="https://unpkg.com/@icon/icofont/icons/star.svg" />
-        <img class="icon icon--mr-05 star__icon star__icon--negative" src="https://unpkg.com/@icon/icofont/icons/star.svg" />
+        <img class="icon icon--mr-05 star__icon" src="https://unpkg.com/@icon/icofont/icons/star.svg" alt="Icono estrella" />
       </div>
     `;
-}
+};
 
-const drawStars = starsNum => {
+const drawStars = (starsNum) => {
   let returnHTML = ``;
-  for(let i = 0; i < 5; i ++) {
+  for (let i = 0; i < 5; i++) {
     const starHTML = setFullEmptyStar(i, starsNum);
     returnHTML += starHTML;
   }
 
   return returnHTML;
-}
+};
 
 const displayReviews = async () => {
   const allReviews = await getJSON("../data/reviews.json");
@@ -46,7 +45,9 @@ const displayReviews = async () => {
     <div class="slider__slide">
         <div class="review">  
             <div class="review__author">
-                <img class="review__author-img" src="${review.author_image}" />
+                <img class="review__author-img" src="${
+                  review.author_image
+                }" alt="Fotografía de ${review.author_title}" />
                 <h3 class="review__author-name">${review.author_title}</h3>
                 <div class="stars-wrapper">
                 ${drawStars(Number(review.review_rating))}
@@ -61,6 +62,22 @@ const displayReviews = async () => {
   }
 
   reviewsList.innerHTML = allReviewsString;
+
+  $("#reviews-list").owlCarousel({
+    items: 1,
+    nav: true,
+    center: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    loop: true,
+    responsive: {
+      550: {
+        items: 4,
+        touchDrag: false,
+      },
+    },
+  });
 };
 
 displayReviews();
