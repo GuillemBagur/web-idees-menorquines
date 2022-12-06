@@ -67,7 +67,7 @@ const footerHTML = `
           </div>
 
           <div class="footer-list-wrapper">
-            <ul id="footer-brands" class="footer-list">
+            <ul id="footer-brands" class="footer-list footer-list--brands">
               <li class="footer-list__el footer-list__el--title">Catálogos</li>
               ${catalogsList}
             </ul>
@@ -83,3 +83,19 @@ const footerHTML = `
 `;
 
 footer.innerHTML = footerHTML;
+
+const footerSpecial = document.querySelector(`[data-id="footer-special"]`);
+
+scrollbar.addEventListener("scroll", () => {
+  const sbHeight =
+    window.innerHeight * (window.innerHeight / scrollbar.offsetHeight);
+
+  const totalScrolled = scrollbar.scrollTop+sbHeight+50
+  if (totalScrolled < scrollbar.scrollHeight) {
+    footerSpecial.classList.remove("visible");
+    return;
+  }
+
+  console.log("hola");
+  footerSpecial.classList.add("visible");
+});

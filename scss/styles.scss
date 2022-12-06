@@ -1148,6 +1148,25 @@ $patternRowWidth: 2rem;
   font-size: 1.2rem;
 }
 
+.footer--special {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  width: 100%;
+  transition: transform .3s;
+}
+
+.footer--special .footer-list--brands {
+  display: none;
+}
+
+.footer--special.visible {
+  transform: none;
+  transition: transform .3s;
+}
+
 .footer a {
   color: $whiteColor;
 }
@@ -1358,6 +1377,10 @@ $patternRowWidth: 2rem;
     margin: auto;
     justify-content: space-between;
     min-height: 50vh;
+  }
+
+  .footer--special .footer-list--brands {
+    display: block;
   }
 
   .footer-list__el {
