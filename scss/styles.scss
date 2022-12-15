@@ -249,6 +249,11 @@ $darkFilter: 10%;
   color: $mainColor;
 }
 
+.letter-mirror {
+  display: inline-block;
+  transform: scaleX(-1) rotate(-20deg) translateX(-.2rem);
+}
+
 .section:nth-child(even) .section__main-text {
   float: right;
 }
@@ -1281,7 +1286,7 @@ $animationSpeed: 180s;
   padding: .5rem;
 
   &__img {
-    height: 9rem;
+    width: 5vw;
     aspect-ratio: 1 / 1;
   }
 }

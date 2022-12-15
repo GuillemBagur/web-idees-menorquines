@@ -219,6 +219,11 @@ a {
   color: #f07d00;
 }
 
+.letter-mirror {
+  display: inline-block;
+  transform: scaleX(-1) rotate(-20deg) translateX(-0.2rem);
+}
+
 .section:nth-child(even) .section__main-text {
   float: right;
 }
@@ -1321,7 +1326,7 @@ a {
   padding: 0.5rem;
 }
 .auto-slide__img {
-  height: 9rem;
+  width: 5vw;
   aspect-ratio: 1/1;
 }
 
