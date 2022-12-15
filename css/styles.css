@@ -189,7 +189,6 @@ a {
   width: 100%;
   box-sizing: border-box;
   padding: inherit;
-  filter: brightness(10%);
   color: #bdbdbd;
   animation-name: undark;
   animation-duration: 3s;
@@ -263,6 +262,7 @@ a {
   pointer-events: none;
   opacity: 1;
   transition: all 0.3s;
+  display: none;
 }
 
 .dissolve {
@@ -386,19 +386,19 @@ a {
 }
 
 .section-wrapper:nth-child(2) {
-  transform: rotate(90deg) translateY(197vh);
+  transform: rotate(-90deg) translateY(197vh);
 }
 
 .section-wrapper:nth-child(3) {
-  transform: rotate(180deg) translateY(197vh);
+  transform: rotate(-180deg) translateY(197vh);
 }
 
 .section-wrapper:nth-child(4) {
-  transform: rotate(270deg) translateY(197vh);
+  transform: rotate(-270deg) translateY(197vh);
 }
 
 .section-wrapper:nth-child(5) {
-  transform: rotate(360deg) translateY(197vh);
+  transform: rotate(-360deg) translateY(197vh);
 }
 
 .flash-effect {
@@ -414,9 +414,10 @@ a {
   animation-duration: 2.2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 2.4;
+  animation-delay: 2.4s;
   opacity: 0;
   pointer-events: none;
+  display: none;
 }
 
 .scrollbar-wrapper {
@@ -695,6 +696,7 @@ a {
   transform: translateY(-3px) scale(1.01);
   box-shadow: 0 3px 20px 1px rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
+  filter: invert(1);
 }
 
 .btn-wrapper {
@@ -1269,6 +1271,62 @@ a {
 .footer-credits__credit {
   margin: 2rem auto;
   font-weight: bold;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateY(-80rem);
+  }
+}
+.auto-sliders-bg-wrapper {
+  position: absolute;
+  display: flex;
+  width: 95%;
+  overflow: hidden;
+  opacity: 0.08;
+}
+
+.auto-slider {
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  bottom: 0;
+  font-size: 5rem;
+}
+.auto-slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.auto-slider::before {
+  left: 0;
+  top: 0;
+}
+
+.auto-slide-track {
+  animation: scroll 180s linear infinite;
+  display: flex;
+  flex-direction: column;
+  height: 80rem;
+}
+
+.auto-slide {
+  font-size: 100%;
+  padding: 0.5rem;
+}
+.auto-slide__img {
+  height: 9rem;
+  aspect-ratio: 1/1;
+}
+
+.auto-slider--reverse .auto-slide-track {
+  animation-direction: reverse;
 }
 
 @media screen and (min-width: 550px) {

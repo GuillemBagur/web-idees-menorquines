@@ -217,7 +217,7 @@ $darkFilter: 10%;
     width: 100%;
     box-sizing: border-box;
     padding: inherit;
-    filter: brightness($darkFilter);
+    //filter: brightness($darkFilter);
     color: $bodyColor;
     animation-name: undark;
     animation-duration: 3s;
@@ -294,6 +294,7 @@ $darkFilter: 10%;
   pointer-events: none;
   opacity: 1;
   transition: all 0.3s;
+  display: none;
 }
 
 .dissolve {
@@ -403,7 +404,7 @@ $sectionsNum: 4;
 $sectionRotation: calc(360deg / $sectionsNum);
 @for $i from 0 through $sectionsNum {
   .section-wrapper:nth-child(#{$i + 1}) {
-    transform: rotate($i * $sectionRotation)
+    transform: rotate(-$i * $sectionRotation)
       translateY(calc($spinnerHeight/2)-3);
   }
 }
@@ -421,9 +422,10 @@ $sectionRotation: calc(360deg / $sectionsNum);
   animation-duration: 2.2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: $undarkDuration - 2.6;
+  animation-delay: $undarkDuration - 2.6s;
   opacity: 0;
   pointer-events: none;
+  display: none;
 }
 
 .scrollbar-wrapper {
@@ -696,6 +698,7 @@ $sectionRotation: calc(360deg / $sectionsNum);
   transform: translateY(-3px) scale(1.01);
   box-shadow: 0 3px 20px 1px rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
+  filter: invert(1);
 }
 
 .btn-wrapper {
@@ -1155,7 +1158,7 @@ $patternRowWidth: 2rem;
   right: 0;
   transform: translateY(100%);
   width: 100%;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .footer--special .footer-list--brands {
@@ -1164,7 +1167,7 @@ $patternRowWidth: 2rem;
 
 .footer--special.visible {
   transform: none;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .footer a {
@@ -1225,6 +1228,68 @@ $patternRowWidth: 2rem;
   margin: 2rem auto;
   font-weight: bold;
 }
+
+$animationSpeed: 180s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateY(- calc(10rem * 8))}
+}
+
+.auto-sliders-bg-wrapper {
+  position: absolute;
+  display: flex;
+  width: 95%;
+  overflow: hidden;
+  opacity: .08;
+}
+
+
+// Styling
+.auto-slider {
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100%;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+  z-index: 0;
+  bottom: 0;
+  font-size: 5rem;
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+}
+
+.auto-slide-track {
+  animation: scroll $animationSpeed linear infinite;
+  display: flex;
+  flex-direction: column;
+  height: calc(10rem * 8);
+}
+
+.auto-slide {
+  font-size: 100%;
+  padding: .5rem;
+
+  &__img {
+    height: 9rem;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+.auto-slider--reverse .auto-slide-track {
+  animation-direction: reverse;
+}
+
 
 @media screen and (min-width: 550px) {
   .spinner-wrapper {

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+
+.morph-effect {
+  margin-top: 10rem;
+}
+
+.morph-effect__aux-text {
+  font-size: 1.5rem;
+}
+
+.morph-container {
+  width: 100vw;
+  display: block;
+  position: relative;
+  height: 2rem;
+  margin: 0;
+  filter: url(#threshold) blur(0.6px);
+}
+
+.morph-text {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 10vw;
+  user-select: none;
+  margin: 0;
+}
+
+@media screen and (min-width: 550px) {
+  .morph-container {
+    height: 3rem;
+  }
+  
+  .morph-text {
+    display: block;
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .morph-container {
+    height: 4rem;
+  }
+}
