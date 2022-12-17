@@ -189,6 +189,7 @@ a {
   width: 100%;
   box-sizing: border-box;
   padding: inherit;
+  filter: brightness(10%);
   color: #bdbdbd;
   animation-name: undark;
   animation-duration: 3s;
@@ -267,7 +268,6 @@ a {
   pointer-events: none;
   opacity: 1;
   transition: all 0.3s;
-  display: none;
 }
 
 .dissolve {
@@ -422,7 +422,6 @@ a {
   animation-delay: 2.4s;
   opacity: 0;
   pointer-events: none;
-  display: none;
 }
 
 .scrollbar-wrapper {
@@ -1291,7 +1290,7 @@ a {
   display: flex;
   width: 95%;
   overflow: hidden;
-  opacity: 0.08;
+  opacity: 0.05;
 }
 
 .auto-slider {
@@ -1332,6 +1331,36 @@ a {
 
 .auto-slider--reverse .auto-slide-track {
   animation-direction: reverse;
+}
+
+.images-carousel {
+  position: absolute;
+  right: 7rem;
+  bottom: 15rem;
+  width: 30vw;
+  aspect-ratio: 5/3;
+  display: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.images-carousel__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.images-carousel__img--transition {
+  z-index: 2;
+  opacity: 0;
+}
+
+.images-carousel__img--visible {
+  opacity: 1;
+  transition: opacity 1s;
 }
 
 @media screen and (min-width: 550px) {
@@ -1496,6 +1525,10 @@ a {
   .footer-logo {
     margin: 0;
     margin-bottom: 1rem;
+  }
+
+  .images-carousel {
+    display: block;
   }
 }
 @media screen and (min-width: 800px) {
