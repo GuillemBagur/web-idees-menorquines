@@ -1,29 +1,48 @@
 const footer = document.getElementById("footer");
 
-let navLinksList = "";
-for (let key in navLinks) {
-  const linkTitle = key;
-  const link = navLinks[key];
-  const toRender = `
+const generateFooter = (
+  {
+    nav,
+    legal,
+    catalog,
+    contact,
+    legal_advice,
+    privacy_politics,
+    cookies_politics,
+  } = {
+    nav: "Navegación",
+    legal: "Legal",
+    catalog: "Catálogo",
+    contact: "Contacto",
+    legal_advice: "Aviso legal",
+    privacy_politics: "Política de privacidad",
+    cookies_politics: "Política de cookies",
+  }
+) => {
+  let navLinksList = "";
+  for (let key in navLinks) {
+    const linkTitle = key;
+    const link = navLinks[key];
+    const toRender = `
       <li class="footer-list__el">
           <a class="nav__nav-link" href="${link}">${linkTitle}</a>
       </li>`;
 
-  navLinksList += toRender;
-}
+    navLinksList += toRender;
+  }
 
-let catalogsList = "";
-for (let catalog of allCatalogs) {
-  const htmlCatalog = `
+  let catalogsList = "";
+  for (let catalog of allCatalogs) {
+    const htmlCatalog = `
     <li class="footer-list__el" title="${catalog.title}">
         <a class="catalog__link" href="${catalog.url}" target="_blank">${catalog.title}</a>
     </li>
     `;
 
-  catalogsList += htmlCatalog;
-}
+    catalogsList += htmlCatalog;
+  }
 
-const footerHTML = `
+  const footerHTML = `
 <section class="footer-main">
           <div class="footer-list-wrapper">
             <ul class="footer-list">
@@ -37,7 +56,7 @@ const footerHTML = `
                 C/ Fusters n5 - POICI 07760 Ciutadella de Menorca
               </li>
               <li class="footer-list__el">
-                <a href="/contacto.html">Contacto</a>
+                <a href="/contacto.html">${contact}</a>
               </li>
               <li class="footer-list__el">
                 <a href="mailto:info@ideesmenorquines.com"
@@ -52,23 +71,21 @@ const footerHTML = `
 
           <div class="footer-list-wrapper">
             <ul id="footer-nav" class="footer-list">
-              <li class="footer-list__el footer-list__el--title">Navegación</li>
+              <li class="footer-list__el footer-list__el--title">${nav}</li>
                 ${navLinksList}
             </ul>
 
             <ul class="footer-list">
-              <li class="footer-list__el footer-list__el--title">Legal</li>
-              <li class="footer-list__el">
-                <a href="">Política de privacidad</a>
-              </li>
-              <li class="footer-list__el"><a href="">Aviso legal</a></li>
-              <li class="footer-list__el"><a href="">Aviso legal</a></li>
+              <li class="footer-list__el footer-list__el--title">${legal}</li>
+              <li class="footer-list__el"><a href="aviso-legal.html" target="_blank">${legal_advice}</a></li>
+              <li class="footer-list__el"><a href="politica-privacidad.html" target="_blank">${privacy_politics}</a></li>
+              <li class="footer-list__el"><a href="politica-cookies.html" target="_blank">${cookies_politics}</a></li>
             </ul>
           </div>
 
           <div class="footer-list-wrapper">
             <ul id="footer-brands" class="footer-list footer-list--brands">
-              <li class="footer-list__el footer-list__el--title">Catálogos</li>
+              <li class="footer-list__el footer-list__el--title">${catalog}</li>
               ${catalogsList}
             </ul>
           </div>
@@ -82,20 +99,8 @@ const footerHTML = `
         </section>
 `;
 
-footer.innerHTML = footerHTML;
-
+  footer.innerHTML = footerHTML;
+};
 const footerSpecial = document.querySelector(`[data-id="footer-special"]`);
 
-scrollbar.addEventListener("scroll", () => {
-  const sbHeight =
-    window.innerHeight * (window.innerHeight / scrollbar.offsetHeight);
-
-  const totalScrolled = scrollbar.scrollTop+sbHeight+50
-  if (totalScrolled < scrollbar.scrollHeight) {
-    footerSpecial.classList.remove("visible");
-    return;
-  }
-
-  console.log("hola");
-  footerSpecial.classList.add("visible");
-});
+generateFooter();

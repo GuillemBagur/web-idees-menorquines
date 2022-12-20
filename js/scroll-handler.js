@@ -137,3 +137,18 @@ const showQuote = () => {
   quoteRotation = scrollbar.scrollTop * sensibility;
   quote.style.transform = `rotateZ(-${quoteRotation}deg) translateX(${quoteTranslate}vw) rotateZ(${quoteRotation}deg)`;
 };
+
+
+scrollbar.addEventListener("scroll", () => {
+  const sbHeight =
+    window.innerHeight * (window.innerHeight / scrollbar.offsetHeight);
+
+  const totalScrolled = scrollbar.scrollTop+sbHeight+100
+  if (totalScrolled < scrollbar.scrollHeight) {
+    footerSpecial.classList.remove("visible");
+    return;
+  }
+
+  console.log("hola");
+  footerSpecial.classList.add("visible");
+});

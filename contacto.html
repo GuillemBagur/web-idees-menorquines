@@ -9,17 +9,18 @@
     <script src="js/accessibility.js" defer></script>
     <script src="js/contact.js" defer></script>
     <script src="js/footer.js" defer></script>
+    <script src="js/lang.js" defer></script>
   </head>
   <body>
     <nav id="nav" class="nav"></nav>
     <div id="wrapper" class="wrapper">
       <div id="main-content">
-        <section class="section section--no-overflow-y section--no-overflow-x">
-          <h1 class="section__title">
+        <section data-section="contact" class="section section--no-overflow-y section--no-overflow-x">
+          <h1 class="section__title" data-role="title">
             <span class="word word--white">Contácta</span>nos
           </h1>
           <h3>
-            Llámanos al 971 48 25 61 o envíanos un email a
+            <span data-role="subtitle">Llámanos al 971 48 25 61 o envíanos un email a</span>
             <a href="mailto:info@ideesmenorquines.com"
               >info@ideesmenorquines.com</a
             >
@@ -33,14 +34,14 @@
                   class="contact-form__input"
                   type="text"
                   name="name"
-                  placeholder="Escribe aquí tu nombre..."
+                  placeholder="Name"
                 />
                 <input
                   id="email"
                   class="contact-form__input"
                   type="email"
                   name="email"
-                  placeholder="Pon aquí tu email..."
+                  placeholder="Email"
                 />
               </div>
 
@@ -48,9 +49,9 @@
                 id="message"
                 class="contact-form__input contact-form__input--textarea"
                 name="message"
-                placeholder="Cuéntanos todo lo que debamos saber aquí..."
+                placeholder="Message"
               ></textarea>
-              <button type="button" id="send-btn" class="btn btn--margin-top-2">
+              <button type="button" data-role="send" id="send-btn" class="btn btn--margin-top-2">
                 Enviar
               </button>
             </form>
@@ -89,8 +90,8 @@
               </div>
 
               <div>
-                <h2>¡Enviado!</h2>
-                <p>
+                <h2 data-role="sent">¡Enviado!</h2>
+                <p data-role="feedback">
                   Tu mensaje ha sido enviado con éxito. Te responderemos lo más
                   rápido posible. ¡Gracias!
                 </p>

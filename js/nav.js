@@ -1,10 +1,23 @@
-const navLinks = {
-  Inicio: "index.html",
-  "¿Quiénes somos?": "quienes-somos.html",
-  Servicios: "servicios.html",
-  Catálogo: "index.html#catalogo",
-  Contacta: "contacto.html",
+const allNavLinks = {
+  es: {
+    Inicio: "index.html",
+    "¿Quiénes somos?": "quienes-somos.html",
+    Servicios: "servicios.html",
+    Catálogo: "index.html#catalogo",
+    Contacta: "contacto.html",
+  },
+
+  en: {
+    Home: "index.html",
+    "About us": "quienes-somos.html",
+    Services: "servicios.html",
+    Catalog: "index.html#catalogo",
+    Contact: "contacto.html",
+  },
 };
+
+let lang = "en";
+const navLinks = allNavLinks[lang];
 
 let linksList = "";
 
@@ -48,7 +61,7 @@ const createTranspLayerToClick = (els) => {
 
 const toggleOpenNav = () => {
   // Media query
-  if(window.innerWidth > 550) return;
+  if (window.innerWidth > 550) return;
   const linksList = document.getElementById("links-list");
   linksList.classList.toggle("active");
   const hamburger = document.getElementById("hamburger");
@@ -56,7 +69,7 @@ const toggleOpenNav = () => {
 
   // Remove possible bgLayers
   const allBgLayers = document.getElementsByClassName("bg-layer");
-  for(let layer of allBgLayers) {
+  for (let layer of allBgLayers) {
     layer.remove();
   }
 
@@ -68,7 +81,6 @@ const toggleOpenNav = () => {
 const hamburger = document.getElementById("hamburger");
 
 hamburger.addEventListener("click", toggleOpenNav);
-
 
 const allCatalogs = [
   {

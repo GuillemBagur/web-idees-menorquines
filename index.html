@@ -28,6 +28,7 @@
     <script src="js/morphism.js" defer></script>
     <script src="js/sliders-bg.js" defer></script>
     <script src="js/images-carousel.js" defer></script>
+    <script src="js/lang.js" defer></script>
     
     <script async src="//www.instagram.com/embed.js" defer></script>
   </head>
@@ -37,10 +38,12 @@
       <div class="scrollbar-wrapper" id="scrollbar">
         <div class="scrollbar" id="scrollbar-height"></div>
       </div>
-      <span id="quote" class="quote" onclick="hide(this)">
-        Más de 1.000
-        pymes han confiado en
-        nosotros para el diseño de su marca.
+      <span id="quote" class="quote" onclick="hide(this)" data-section="quote">
+        <span data-role="title">
+          Más de 1.000
+          pymes han confiado en
+          nosotros para el diseño de su marca.
+        </span>
       </span>
       <main id="main-content" class="spinner-wrapper">
         
@@ -74,7 +77,7 @@
             </div>
             
 
-            <section class="section section--main">
+            <section class="section section--main" data-section="main">
               <div id="auto-sliders-bg-wrapper" class="auto-sliders-bg-wrapper">
               </div>
               <div class="section__background">
@@ -87,14 +90,14 @@
                 </h2>
 
                 <div class="morph-effect">
-                  <span class="morph-effect__aux-text">Si buscabas...</span>
+                  <span class="morph-effect__aux-text" data-section="si-buscabas">Si buscabas...</span>
                   </br>
                   <div class="morph-container">
                       <span class="morph-text" id="morph-text-1"></span>
                       <span class="morph-text" id="morph-text-2"></span>
                   </div>
                   </br>
-                  <span class="morph-effect__aux-text">¡<span class="word word--orange">no busques</span> más!</span>
+                  <span class="morph-effect__aux-text" data-section="no-busques-mas">¡<span class="word word--orange">no busques</span> más!</span>
                 </div>
 
                 <div class="images-carousel">
@@ -118,10 +121,10 @@
           </li>
 
           <li class="section-wrapper">
-            <section class="section">
+            <section class="section" data-section="catalog">
               <a data-id="catalogo" class="scrollto scrollto--left"></a>
               <a data-id="catalogo" class="scrollto scrollto--right"></a>
-              <h2 class="section__title">Catálogos</h2>
+              <h2 class="section__title" data-role="title">Catálogos</h2>
 
               <div class="section__body">
                 <p class="section__main-text">
@@ -132,8 +135,8 @@
           </li>
 
           <li class="section-wrapper">
-            <section class="section">
-              <h2 class="section__title">
+            <section class="section" data-section="our-work">
+              <h2 class="section__title" data-section="title">
                 <span class="word word--white">Nuestros</span> trabajos
               </h2>
               <div class="section__body">
@@ -244,7 +247,7 @@
                     </div>
                   </div>
 
-                <div class="btn-wrapper btn-wrapper--center"><a target="_blank" class="btn btn--w-icon btn--margin-top-2" href="https://www.instagram.com/ideesmenorquines/">
+                <div class="btn-wrapper btn-wrapper--center"><a data-role="ver-mas" target="_blank" class="btn btn--w-icon btn--margin-top-2" href="https://www.instagram.com/ideesmenorquines/">
                   <img class="icon icon--mr-05" width="24" src="https://unpkg.com/@icon/icofont/icons/instagram.svg" alt="Icono de Instagram" />Ver más</a>
                 </div>
 
@@ -253,10 +256,10 @@
           </li>
 
           <li class="section-wrapper">
-            <section class="section">
+            <section class="section" data-section="opinions">
               <a data-id="reviews" class="scrollto scrollto--left"></a>
               <a data-id="reviews" class="scrollto scrollto--right"></a>
-              <h2 class="section__title">¿Qué piensan nuestros clientes?</h2>
+              <h2 class="section__title" data-role="title">¿Qué piensan nuestros clientes?</h2>
 
               <div class="section__body">
                 <p class="section__main-text">

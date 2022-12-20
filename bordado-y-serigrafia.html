@@ -5,24 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Idees Menorquines</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/hide-effects.js" defer></script>
     <script src="js/nav.js" defer></script>
     <script src="js/accessibility.js" defer></script>
     <script src="js/footer.js" defer></script>
   </head>
   <body>
     <nav id="nav" class="nav"></nav>
-    <div id="wrapper" class="wrapper">
+    <div id="wrapper" class="wrapper" data-section="embroider-print">
       <div id="main-content">
         <section class="section">
-          <h1 class="section__title">Bordados <span class="word word--white">y serigrafía</span></h1>
-          <h3>
+          <h1 class="section__title" data-role="title">Bordados <span class="word word--white">y serigrafía</span></h1>
+          <h3 data-role="subtitle">
             ¡Solicítanos un presupuesto sin compromiso para realizar unas
             muestras!
           </h3>
 
           <div class="section__body">
-            <p class="section__main-text">
+            <p class="section__main-text" data-role="text-1">
               Gracias a que disponemos de taller propio, podemos ofrecerte un
               servicio profesional de estampación y bordado. También, disponemos
               de un servicio especializado para atender las necesidades
@@ -41,11 +40,11 @@
             />
 
             <div class="btn-wrapper btn-wrapper--space-around">
-              <a href="/contacto.html" class="btn btn--margin-top-2"
+              <a data-role="contact" href="/contacto.html" class="btn btn--margin-top-2"
                 >Contactar</a
               >
 
-              <a href="/servicios.html" class="btn btn--margin-top-2 btn--secondary"
+              <a data-role="our-services" href="/servicios.html" class="btn btn--margin-top-2 btn--secondary"
                 >Nuestros servicios</a
               >
             </div>

@@ -1,0 +1,105 @@
+{
+  "quote": {
+    "title": "Más de 1.000 pymes han confiado en nosotros para el diseño de su marca."
+  },
+
+  "main": {
+    "si-buscabas": "Si buscabas...",
+    "no-busques-mas": "¡<span class='word word--orange'>no busques</span> más!"
+  },
+
+  "catalog": {
+    "title": "Catálogos"
+  },
+
+  "our-work": {
+    "title": "<span class='word word--white'>Nuestros</span> trabajos",
+    "ver-mas": "<img class='icon icon--mr-05' width='24' src='https://unpkg.com/@icon/icofont/icons/instagram.svg' alt='Icono de Instagram' />Ver más"
+  },
+
+  "opinions": {
+    "title": "¿Qué piensan nuestros clientes?"
+  },
+
+  "contact": {
+    "title": "<span class='word word--white'>Contácta</span>nos",
+    "subtitle": "Llámanos al 971 48 25 61 o envíanos un email a",
+    "send": "Enviar",
+    "sent": "¡Enviado!",
+    "feedback": "Tu mensaje ha sido enviado con éxito. Te responderemos lo más rápido posible. ¡Gracias!"
+  },
+
+  "digital-printout": {
+    "title": "Impresión <span class='word word--white'>digital</span>",
+    "subtitle": "Servicios de impresión digital ¡al alcance de todos!",
+    "text-1": "Las últimas innovaciones en el campo de la impresión digital han conseguido lo que, hasta hace poco, no estaba al alcance de una pyme: la personalización de cualquier objeto o material. <br /> En Idees Menorquines disponemos de la tecnología más innovadora para que nuestros clientes puedan aplicar sus diseños o creaciones directamente sobre cualquier pieza.",
+    "contact": "Contactar",
+    "our-services": "Nuestros servicios"
+  },
+
+  "about-us": {
+    "title": "<span class='word word--white'>¿Quiénes</span> somos?",
+    "subtitle": "Todo un equipo de personas comprometidas con su trabajo",
+    "text-1": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio neque consectetur totam aliquam soluta labore velit quos dolores, ex magnam iste architecto vero tempore quaerat debitis voluptas sunt perferendis? Eaque."
+  },
+
+  "where-we-are": {
+    "title": "¿Dónde <span class='word word--white'>estamos?</span>",
+    "contact": "Contacto"
+  },
+
+  "embroider-print": {
+    "title": "Bordados <span class='word word--white'>y serigrafía</span>",
+    "subtitle": "¡Solicítanos un presupuesto sin compromiso para realizar unas muestras!",
+    "text-1": "Gracias a que disponemos de taller propio, podemos ofrecerte un servicio profesional de estampación y bordado. También, disponemos de un servicio especializado para atender las necesidades específicas de agencias de publicidad, tiendas de deporte y fabricantes y artesanos. <br /> Trabajamos conjuntamente con cada cliente para plasmar sus propios diseños sobre cualquier tipo de prenda y complemento, calzado, avarcas, etc.",
+    "contact": "Contactar",
+    "our-services": "Nuestros servicios"
+  },
+
+  "work-wear": {
+    "title": "<span class='word word--white'>Ropa</span> laboral",
+    "subtitle": "La imagen de tu empresa <span class='word word--orange'>marca</span> la diferencia",
+    "text-1": "La ropa laboral representa un aspecto a tener muy en cuenta a la hora de transmitir una imagen adecuada de la empresa a tus clientes. En Idees Menorquines somos distribuidores oficiales de las mejores marcas de ropa laboral. En nuestros <a href='index.html#catalogo'>catálogos</a> encontrarás desde la opción más básica y económica hasta los diseños más actuales e innovadores, donde prima la comodidad y la durabilidad de las prendas.",
+    "contact": "Contactar",
+    "our-services": "Nuestros servicios"
+  },
+
+  "advertising-wear": {
+    "title": "Ropa <span class='word word--white'>publicitaria</span>",
+    "subtitle": "Para <span class='word word--orange'>cualquier</span> ocasión o evento",
+    "text-1": "¿Habías pensado en regalar camisetas básicas para dar a conocer tu negocio? ¿Quieres promocionar un evento deportivo entregando prendas técnicas con tu logo a los participantes? ¿O mejor una bolsa o una mochila personalizada de regalo? <br /> <br /> Disponemos de la más amplia gama de prendas y accesorios para que cualquier empresa o entidad pueda publicitar todo tipo de actividad o evento, a los precios más competitivos del mercado.",
+    "contact": "Contactar"
+  },
+
+  "branding-services": {
+    "title": "<span class='word word--white'>Servicios de</span> branding",
+    "subtitle": "<span class='word word--orange'>Conecta</span> emocionalmente con tus clientes",
+    "text-1": "En Idees Menorquines tenemos más de 20 años de experiencia en el desarrollo de proyectos de identidad corporativa. Durante este periodo, han sido más de 1.000 las pymes que han confiado en nosotros para el diseño de su logotipo y marca.",
+    "contact": "Contactar",
+    "our-services": "Nuestros servicios"
+  },
+
+  "services": {
+    "title": "<span class='word word--white'>Nuestros</span> servicios",
+    "subtitle": "En <span class='word word--orange'>Idees Menorquines</span> tenemos los mejores servicios para que puedas potenciar tu imagen corporativa. <span class='word word--orange'>¡Marca la diferencia!</span>",
+    "more-info": "Más información",
+    "wear-title": "Ropa",
+    "wear-text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam praesentium nemo nisi quam officiis.",
+    "embroider-title": "Bordado y serigrafía",
+    "embroider-text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam praesentium nemo nisi quam officiis.",
+    "printout-title": "Impresión",
+    "printout-text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam praesentium nemo nisi quam officiis.",
+    "branding-title": "Branding",
+    "branding-text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam praesentium nemo nisi quam officiis."
+  },
+
+  "footer": {
+    "nav": "Navegación",
+    "legal": "Legal",
+    "catalog": "Catálogos",
+    "contact": "Contacto",
+    "legal_advice": "Aviso legal",
+    "privacy_politics": "Política de privacidad",
+    "cookies_politics": "Política de cookies"
+  }
+}
