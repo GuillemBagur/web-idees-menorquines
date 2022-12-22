@@ -1,0 +1,105 @@
+{
+  "quote": {
+    "title": "Més de 1.000 pimes han confiat en nosaltres pel disseny de la seva marca."
+  },
+
+  "main": {
+    "si-buscabas": "Si buscaves...",
+    "no-busques-mas": "¡<span class='word word--orange'>no busquis</span> més!"
+  },
+
+  "catalog": {
+    "title": "Catàlegs"
+  },
+
+  "our-work": {
+    "title": "<span class='word word--white'>Els nostres</span> treballs",
+    "ver-mas": "<img class='icon icon--mr-05' width='24' src='https://unpkg.com/@icon/icofont/icons/instagram.svg' alt='Icono de Instagram' />Veure més"
+  },
+
+  "opinions": {
+    "title": "¿Què pensen els nostres clients?"
+  },
+
+  "contact": {
+    "title": "<span class='word word--white'>Contacta</span>'ns",
+    "subtitle": "Truca'ns al <a href='tel:971 48 25 61'>971 48 25 61</a> o envia'ns un email a",
+    "send": "Enviar",
+    "sent": "Enviat!",
+    "feedback": "El teu missatge s'ha enviat correctament. Et contestarem el més ràpid possible. Gràcies!"
+  },
+
+  "digital-printout": {
+    "title": "Impressió <span class='word word--white'>digital</span>",
+    "subtitle": "Serveis d'impressió digital per a tothom!",
+    "text-1": "Les últimes innovacions en el camp de la impressió digital han aconseguido el que, fins fa poc, no estava l'abast d'una pime: la personalització de qualsevol objecte o material. <br /> A Idees Menorquines, disposem de la tecnologia més innovadora perquè els nostres clients puguin aplicar els seus dissenys o creacions directament sobre qualsevol peça.",
+    "contact": "Contacta'ns",
+    "our-services": "Els nostres serveis"
+  },
+
+  "about-us": {
+    "title": "<span class='word word--white'>Qui</span> som?",
+    "subtitle": "Tot un grup de persones compromeses amb el seu treball.",
+    "text-1": "En el nostre equip humà es mesclen totes les habilitats necessàries perquè la teva idea surti endavant: creativitat, perfeccionisme, habilitats plàstiques, experiència i col·laboració. Explica'ns què vols i farem el teu somni corporatiu realitat!"
+  },
+
+  "where-we-are": {
+    "title": "A on <span class='word word--white'>estem?</span>",
+    "contact": "Contacta'ns"
+  },
+
+  "embroider-print": {
+    "title": "Brodats <span class='word word--white'>i serigrafia</span>",
+    "subtitle": "Sol·licita'ns un pressupost sense compromís per realitzar unes mostres!",
+    "text-1": "Gràcies a que disposem de taller propi, podem oferir-te un servei professional d'estampació i brodat. També, disposem d'un servei especial per atendre les necessitats específiques d'agències de publicitat, tendes d'esport i fabricants artesans. <br /> Treballem conjuntament amb cada client per plasmaer els seus propis dissenys sobre qualsevol tipus de peça i complement, calçat, avarques, etc.",
+    "contact": "Contacta'ns",
+    "our-services": "Els nostres serveis"
+  },
+
+  "work-wear": {
+    "title": "<span class='word word--white'>Roba</span> laboral",
+    "subtitle": "La imatge de la teva empresa <span class='word word--orange'>marca</span> la diferència",
+    "text-1": "La roba laboral representa un aspecte a tenir molt en compte a l'hora de transmetre una imatge adequada de l'empresa als teus clients. A Idees Menorquines, som distribuidors oficials de les millors marques de roba laboral. Als nostres <a href='index.html#catalogo'>catàlegs</a> trobaràs des de l'opció més bàsica i econòmica fins els dissenys més actuals i innovadors, on es prioritza la comoditat i la durada de les peces.",
+    "contact": "Contacta'ns",
+    "our-services": "Els nostres serveis"
+  },
+
+  "advertising-wear": {
+    "title": "Roba <span class='word word--white'>publicitària</span>",
+    "subtitle": "Per <span class='word word--orange'>quasevol</span> ocasió o esdeveniment",
+    "text-1": "Havies pensat en regalar camisetes bàsiques per donar a conèixer el teu negoci? Vols promocionar un esdeveniment esportiu entregant peces tècniques amb el teu logotip als participants? O millor una bossa o una motxilla personalitzada de regal? <br /> <br /> Disposem d'una ampla col·lecció de peces i accessoris perquè qualsevol empresa o entitat pugui publicitar tot tipus d'activitat o esdeveniment, als preus més competitius del mercat.",
+    "contact": "Contacta'ns"
+  },
+
+  "branding-services": {
+    "title": "<span class='word word--white'>Serveis de</span> brànding",
+    "subtitle": "<span class='word word--orange'>Connecta</span> emocionalment amb els teus clients",
+    "text-1": "A Idees Menorquines tenim més de 20 anys d'experiència en el desenvolupament de projectes d'identitat corporativa. Durant aquest període, han sigut més de 1.000 les pimes que han confiat en nosaltres pel disseny del seu logotip i la seva marca",
+    "contact": "Contacta'ns",
+    "our-services": "Els nostres serveis"
+  },
+
+  "services": {
+    "title": "<span class='word word--white'>Els nostres</span> serveis",
+    "subtitle": "A  <span class='word word--orange'>Idees Menorquines</span>, tenim els millors serveis perquè puguis potenciar la teva imatge corporativa. <span class='word word--orange'>Marca la diferència!</span>",
+    "more-info": "Més informació",
+    "wear-title": "Roba",
+    "wear-text": "Disposem d'una ampla oferta de peces i accessoris.",
+    "embroider-title": "Brodat i serigrafia",
+    "embroider-text": "Vols el teu logotip en relleu? Te'l brodem!",
+    "printout-title": "Impressió",
+    "printout-text": "Fem realitat els teus somnis d'estampat.",
+    "branding-title": "Brànding",
+    "branding-text": "La teva empresa necessita un canvi de look?"
+  },
+
+  "footer": {
+    "nav": "Navegació",
+    "legal": "Legal",
+    "catalog": "Catàlegs",
+    "contact": "Contacte",
+    "legal_advice": "Avís legal",
+    "privacy_politics": "Política de privacitat",
+    "cookies_politics": "Política de galetes"
+  }
+}

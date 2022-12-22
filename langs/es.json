@@ -13,7 +13,7 @@
   },
 
   "our-work": {
-    "title": "<span class='word word--white'>Nuestros</span> trabajos",
+    "title": "<span class='word word--white'>Nuestros</span> trabajos.",
     "ver-mas": "<img class='icon icon--mr-05' width='24' src='https://unpkg.com/@icon/icofont/icons/instagram.svg' alt='Icono de Instagram' />Ver más"
   },
 
@@ -23,7 +23,7 @@
 
   "contact": {
     "title": "<span class='word word--white'>Contácta</span>nos",
-    "subtitle": "Llámanos al 971 48 25 61 o envíanos un email a",
+    "subtitle": "Llámanos al <a href='tel:971 48 25 61'>971 48 25 61</a> o envíanos un email a",
     "send": "Enviar",
     "sent": "¡Enviado!",
     "feedback": "Tu mensaje ha sido enviado con éxito. Te responderemos lo más rápido posible. ¡Gracias!"
