@@ -39,8 +39,8 @@
 
   "about-us": {
     "title": "<span class='word word--white'>¿Quiénes</span> somos?",
-    "subtitle": "Todo un equipo de personas comprometidas con su trabajo",
-    "text-1": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio neque consectetur totam aliquam soluta labore velit quos dolores, ex magnam iste architecto vero tempore quaerat debitis voluptas sunt perferendis? Eaque."
+    "subtitle": "Todo un grupo de personas comprometidas con su trabajo",
+    "text-1": "En nuestro equipo humano se mezclan todas las habilidades necesarias para que tu idea salga adelante: creatividad, perfeccionismo, habilidades plásticas, experiencia y colaboración. Explícanos qué quieres, y haremos realidad tu sueño corporativo."
   },
 
   "where-we-are": {
@@ -84,13 +84,13 @@
     "subtitle": "En <span class='word word--orange'>Idees Menorquines</span> tenemos los mejores servicios para que puedas potenciar tu imagen corporativa. <span class='word word--orange'>¡Marca la diferencia!</span>",
     "more-info": "Más información",
     "wear-title": "Ropa",
-    "wear-text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam praesentium nemo nisi quam officiis.",
+    "wear-text": "Disponemos de la más amplia gama de prendas y accesorios.",
     "embroider-title": "Bordado y serigrafía",
-    "embroider-text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam praesentium nemo nisi quam officiis.",
+    "embroider-text": "¿Quieres tu logotipo con relieve? ¡Te lo bordamos!",
     "printout-title": "Impresión",
-    "printout-text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam praesentium nemo nisi quam officiis.",
+    "printout-text": "Hacemos realidad tus sueños en cuanto al estampado.",
     "branding-title": "Branding",
-    "branding-text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam praesentium nemo nisi quam officiis."
+    "branding-text": "¿Tu empresa necesita un cambio de look?"
   },
 
   "footer": {

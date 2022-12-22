@@ -4,7 +4,8 @@ $bgColor: #212322;
 $whiteColor: #f0f0f0;
 $bodyColor: darken($whiteColor, 20%);
 
-$fonts: Calibri, Arial, Helvetica, sans-serif;
+@import url("../fonts/Calibri-Light/style.css");
+$fonts: "Calibri", Arial, Helvetica, sans-serif;
 
 $undarkDuration: 5;
 
@@ -251,7 +252,7 @@ $darkFilter: 10%;
 
 .letter-mirror {
   display: inline-block;
-  transform: scaleX(-1) rotate(-20deg) translateX(-.2rem);
+  transform: scaleX(-1) rotate(-20deg) translateX(-0.2rem);
 }
 
 .section:nth-child(even) .section__main-text {
@@ -587,6 +588,43 @@ $sectionRotation: calc(360deg / $sectionsNum);
 .nav__nav-link:hover::after {
   max-height: 3px;
   transition: all 0.2s;
+}
+
+.change-lang {
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  height: 1rem;
+}
+
+.change-lang .choose-lang {
+  padding: 1rem;
+  margin: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  list-style-type: none;
+  cursor: default;
+  font-size: 1.5rem;
+  transform: translateY(30%);
+}
+
+.choose-lang__lang {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.choose-lang__link {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.change-lang:focus .choose-lang {
+  opacity: 1;
+  display: block;
+  transition: all 0.3s;
 }
 
 .hamburger {
@@ -1236,8 +1274,12 @@ $animationSpeed: 180s;
 
 // Animation
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateY(- calc(10rem * 8))}
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateY(-calc(10rem * 8));
+  }
 }
 
 .auto-sliders-bg-wrapper {
@@ -1245,31 +1287,30 @@ $animationSpeed: 180s;
   display: flex;
   width: 95%;
   overflow: hidden;
-  opacity: .05;
+  opacity: 0.05;
 }
-
 
 // Styling
 .auto-slider {
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 100%;
-	margin: auto;
-	overflow:hidden;
-	position: relative;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
   z-index: 0;
   bottom: 0;
   font-size: 5rem;
-	
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
 
-	&::before {
-		left: 0;
-		top: 0;
-	}
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
 }
 
 .auto-slide-track {
@@ -1281,7 +1322,7 @@ $animationSpeed: 180s;
 
 .auto-slide {
   font-size: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
 
   &__img {
     width: 5vw;
@@ -1322,7 +1363,6 @@ $animationSpeed: 180s;
   opacity: 1;
   transition: opacity 1s;
 }
-
 
 @media screen and (min-width: 550px) {
   .spinner-wrapper {
@@ -1523,4 +1563,8 @@ $animationSpeed: 180s;
   .spinner-wrapper {
     transform: translate(-50%, -60%);
   }
+}
+
+.m-top-5 {
+  margin-top: 5rem;
 }

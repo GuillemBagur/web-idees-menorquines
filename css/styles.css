@@ -1,3 +1,4 @@
+@import url("../fonts/Calibri-Light/style.css");
 /* Send animation timing chain */
 html {
   scroll-behavior: smooth;
@@ -9,7 +10,7 @@ body {
 }
 
 * {
-  font-family: Calibri, Arial, Helvetica, sans-serif;
+  font-family: "Calibri", Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -588,6 +589,43 @@ a {
 .nav__nav-link:hover::after {
   max-height: 3px;
   transition: all 0.2s;
+}
+
+.change-lang {
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  height: 1rem;
+}
+
+.change-lang .choose-lang {
+  padding: 1rem;
+  margin: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  list-style-type: none;
+  cursor: default;
+  font-size: 1.5rem;
+  transform: translateY(30%);
+}
+
+.choose-lang__lang {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.choose-lang__link {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.change-lang:focus .choose-lang {
+  opacity: 1;
+  display: block;
+  transition: all 0.3s;
 }
 
 .hamburger {
@@ -1282,7 +1320,7 @@ a {
     transform: translateX(0);
   }
   100% {
-    transform: translateY(-80rem);
+    transform: translateY(-calc(80rem));
   }
 }
 .auto-sliders-bg-wrapper {
@@ -1555,6 +1593,9 @@ a {
   .spinner-wrapper {
     transform: translate(-50%, -60%);
   }
+}
+.m-top-5 {
+  margin-top: 5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

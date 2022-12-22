@@ -16,7 +16,7 @@ const allNavLinks = {
   },
 };
 
-let lang = "en";
+let lang = "es";
 const navLinks = allNavLinks[lang];
 
 let linksList = "";
@@ -31,6 +31,18 @@ for (let key in navLinks) {
 
   linksList += toRender;
 }
+
+linksList += `
+<li class="nav__nav-link-li">
+<button id="change-lang" class="change-lang"><img class="icon icon--nav" width="24" src="https://unpkg.com/@icon/icofont/icons/globe.svg" alt="Icono de cambiar de idioma" />
+  <ul class="choose-lang">
+    <li class="choose-lang__lang"><a class="choose-lang__link" href="index.html?lang=ca">Català</a></li>
+    <li class="choose-lang__lang"><a class="choose-lang__link" href="index.html?lang=es">Español</a></li>
+    <li class="choose-lang__lang"><a class="choose-lang__link" href="index.html?lang=en">English</a></li>
+  </ul>
+</button>
+</li>
+`;
 
 document.getElementById("nav").innerHTML = `
 <a class="nav__home-link" href="/index.html">
