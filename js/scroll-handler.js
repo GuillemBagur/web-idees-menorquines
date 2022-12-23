@@ -149,6 +149,5 @@ scrollbar.addEventListener("scroll", () => {
     return;
   }
 
-  console.log("hola");
   footerSpecial.classList.add("visible");
 });

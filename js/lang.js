@@ -4,24 +4,42 @@ const loadFile = async (lang) => {
   return file;
 };
 
-const translate = async (lang) => {
-  const file = await loadFile(lang);
+const translate = async (thisLang) => {
+  const file = await loadFile(thisLang);
   for (let key in file) {
     const section = file[key];
     const sectionEl = document.querySelector(`[data-section="${key}"]`);
-    if(!sectionEl) continue;
+    if (!sectionEl) continue;
     for (let keyRole of Object.keys(section)) {
       const role = section[keyRole];
       const roleEls = sectionEl.querySelectorAll(`[data-role="${keyRole}"]`);
-      if(!roleEls) continue;
-      roleEls.forEach(roleEl => {
+      if (!roleEls) continue;
+      roleEls.forEach((roleEl) => {
         roleEl.innerHTML = role;
-      })
+      });
     }
   }
-
+  
+  lang = thisLang;
   generateFooter(file.footer);
 };
 
+translate("es");
 
-translate("ca");
+const translateOnLoad = () => {
+
+}
+
+const translateHandler = async (e) => {
+  const chosenLang = e.target.dataset.lang;
+  if(!chosenLang) return;
+  const availableLangs = ["es", "en", "ca"];
+  if(availableLangs.includes(chosenLang)) {
+    await translate(chosenLang);
+    return;
+  }
+
+  await translate("es");
+}
+
+document.getElementById("change-lang").addEventListener("click", translateHandler);

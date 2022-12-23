@@ -18,7 +18,7 @@
   },
 
   "opinions": {
-    "title": "¿Què pensen els nostres clients?"
+    "title": "¿Què <span class='word word--white'>pensen</span> els nostres clients?"
   },
 
   "contact": {

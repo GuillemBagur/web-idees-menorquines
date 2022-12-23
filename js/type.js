@@ -1,10 +1,29 @@
-const typed = new Typed(".typed", {
-  strings: [
+const allTypingStrings = {
+  es: [
     "Ideas originales",
     "Ideas sorprendentes",
     "Ideas a buen precio",
     "Simplemente, ¡buenas ideas!",
   ],
+
+  en: [
+    "Original ideas",
+    "Amazing ideas",
+    "Budget ideas",
+    "Simply, great ideas!",
+  ],
+
+  ca: [
+    "Idees originals",
+    "Idees sorprenenents",
+    "Idees a bon preu",
+    "Simplement, bones idees!",
+  ]
+};
+
+
+const typed = new Typed(".typed", {
+  strings: allTypingStrings[lang], // lang defined in nav.js
   stringsElement: "#cadenas-texto", // ID del elemento que contiene cadenas de texto a mostrar.
   typeSpeed: 60, // Velocidad en mlisegundos para poner una letra,
   startDelay: 4500, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
