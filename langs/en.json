@@ -1,0 +1,105 @@
+{
+  "quote": {
+    "title": "More than 1.000 SMB have trusted us for the design of their brand."
+  },
+
+  "main": {
+    "si-buscabas": "If you were searching for...",
+    "no-busques-mas": "¡<span class='word word--orange'>you've just</span> found it!"
+  },
+
+  "catalog": {
+    "title": "Catalogues"
+  },
+
+  "our-work": {
+    "title": "<span class='word word--white'>Our</span> work",
+    "ver-mas": "<img class='icon icon--mr-05' width='24' src='https://unpkg.com/@icon/icofont/icons/instagram.svg' alt='Icono de Instagram' />See more"
+  },
+
+  "opinions": {
+    "title": "What people say about us?"
+  },
+
+  "contact": {
+    "title": "<span class='word word--white'>Contact</span> us",
+    "subtitle": "Call us at <a href='tel:971 48 25 61'>971 48 25 61</a> or send us an email to",
+    "send": "Send",
+    "sent": "Sent!",
+    "feedback": "Your message has been sent correctly. We'll answer you as soon as possible. Thank you!"
+  },
+
+  "digital-printout": {
+    "title": "Digital <span class='word word--white'>printing</span>",
+    "subtitle": "Printing services for everyone!",
+    "text-1": "The lastest innovations in the digital printing field have achieved something that any SMB could afford before: personalizing any item or material. </br> At Idees Menorquines, we have the most cutting-edge technology to print the customer's design on any piece.",
+    "contact": "Contact us",
+    "our-services": "Our services"
+  },
+
+  "about-us": {
+    "title": "<span class='word word--white'>About</span> us",
+    "subtitle": "A group of people working hard.",
+    "text-1": "In our team, we mix all the necessary skills to make your idea shine: creativity, perfectionism, plastic skills, experience and collaboration. Tell us your corporative dreams and we'll make them happen!"
+  },
+
+  "where-we-are": {
+    "title": "Where <span class='word word--white'>we are?</span>",
+    "contact": "Contact us"
+  },
+
+  "embroider-print": {
+    "title": "Embroidering <span class='word word--white'>& silk-screen printing</span>",
+    "subtitle": "Ask us a budget without any obligation, and we'll make you some samples!",
+    "text-1": "Thanks to our own workshop, we can offer you a professional embroidering and printing service at the best price. We also have a special service to attend to specific needs of marketing agencies, sport shops and artisans. <br /> We work jointly with every customer to express his own designs on any type of piece or item.",
+    "contact": "Contact us",
+    "our-services": "Our services"
+  },
+
+  "work-wear": {
+    "title": "<span class='word word--white'>Work</span> wear",
+    "subtitle": "The corporate image of your business <span class='word word--orange'>marks</span> the difference",
+    "text-1": "Work wear has turned into an essencial facet when it comes to transmit an appropiate image of your business to your customers. At Idees Menorquines, we're official distributors of the best work wear brands. In our <a href='index.html#catalogo'>catalogues</a> you'll find from the cheapest option to the most contemporany desings.",
+    "contact": "Contact us",
+    "our-services": "Our services"
+  },
+
+  "advertising-wear": {
+    "title": "Advertising <span class='word word--white'>wear</span>",
+    "subtitle": "For <span class='word word--orange'>any</span> occasion or event.",
+    "text-1": "Have you ever thought of giving some T-Shirts to promote your brand and business? Do you want to sponsor a sports event giving some clothes with your logo to every participant? Or a personalized bag might be better? <br /><br /> We have a large collection of clothes and objects available to let you choose. Always, at the most competitive market prices.",
+    "contact": "Contact us"
+  },
+
+  "branding-services": {
+    "title": "<span class='word word--white'>Branding</span> services",
+    "subtitle": "<span class='word word--orange'>Connect emotionally</span> with your customers",
+    "text-1": "At Idees Menorquines, we have more than 20 years of experience developing corporate images. During this period, more than 1.000 SMB have trusted us in the design of their logo and brand.",
+    "contact": "Contact us",
+    "our-services": "Our services"
+  },
+
+  "services": {
+    "title": "<span class='word word--white'>Our</span> services",
+    "subtitle": "At <span class='word word--orange'>Idees Menorquines</span>, we have the best services to help you to boost your corporate image. <span class='word word--orange'>Mark the difference!</span>",
+    "more-info": "More info",
+    "wear-title": "Wear",
+    "wear-text": "We have a large collection of clothes to choose.",
+    "embroider-title": "Embroidering & silk-screen printing",
+    "embroider-text": "Do you want your logo with a relief effect? We embroider it for you!",
+    "printout-title": "Digital printing",
+    "printout-text": "We make your printing dreams come true.",
+    "branding-title": "Branding",
+    "branding-text": "Does your business need a look change?"
+  },
+
+  "footer": {
+    "nav": "Navigation",
+    "legal": "Legal",
+    "catalog": "Catalogues",
+    "contact": "Contact",
+    "legal_advice": "Legal advice",
+    "privacy_politics": "Privacy politics",
+    "cookies_politics": "Cookies politics"
+  }
+}

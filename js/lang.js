@@ -24,4 +24,4 @@ const translate = async (lang) => {
 };
 
 
-translate("es");
+translate("ca");

@@ -14,6 +14,14 @@ const allNavLinks = {
     Catalog: "index.html#catalogo",
     Contact: "contacto.html",
   },
+
+  ca: {
+    Inici: "index.html",
+    "Sobre nosaltres": "quienes-somos.html",
+    Serveis: "servicios.html",
+    Catàlegs: "index.html#catalogo",
+    Contacte: "contacto.html",
+  },
 };
 
 let lang = "es";
@@ -96,33 +104,69 @@ hamburger.addEventListener("click", toggleOpenNav);
 
 const allCatalogs = [
   {
-    url: "https://view.joomag.com/clique-2020-clique-spain/0422615001576571696?short",
+    url: "https://viewer.joomag.com/clique-2022-spain/0654052001640687066?short",
     img: "imgs/logos/clique.jpg",
     title: "Clique",
   },
 
   {
-    url: "http://www.centraluniformes.com/online/catalogos/Cat_Roger.pdf",
-    img: "imgs/logos/roger.jpg",
-    title: "Roger",
+    url: "https://www.sols-products.com/ecatalogue/2022/ES/index.html",
+    img: "imgs/logos/sols.jpg",
+    title: "Sol's",
   },
 
   {
-    url: "https://issuu.com/workteamoficial/docs/catalogo_completo_esp_2020?fr=sYWQ3ZDMyNzgyMg",
-    img: "imgs/logos/workteam.jpg",
-    title: "WorkTeam",
+    url: "https://static.gorfactory.es/catalogs/pdf/2022/roly_es.pdf",
+    img: "imgs/logos/roly.jpg",
+    title: "Roly",
   },
 
   {
-    url: "https://acquaroyal.com/wp-content/uploads/2020/AcquaRoyal2020_baja.pdf",
+    url: "https://www.acquaroyal.com/inicio-catalogo-productos/",
     img: "imgs/logos/acquaroyal.jpg",
     title: "Acqua Royal",
   },
 
   {
-    url: "https://www.velilla-group.com/media/flipbook/flipbook_catalogo_2020/pdf/VELILLA_Catalogo_2020_21.pdf",
+    url: "http://resources.jhktshirt.com/catalogue/jhktshirt_catalogue_es.pdf",
+    img: "imgs/logos/jhk.jpg",
+    title: "JHK",
+  },
+
+  {
+    url: "https://www.velilla-group.com/es/catalogos?___store=es",
     img: "imgs/logos/velilla.jpg",
     title: "Velilla",
+  },
+
+  {
+    url: "https://issuu.com/workteamoficial/docs/catalogo_completo_esp_2022",
+    img: "imgs/logos/workteam.jpg",
+    title: "WorkTeam",
+  },
+
+  {
+    url: "https://www.payperwear.com/flex/AppData/Redational/ppw/cataloghi/corporate/PayperCatalogueCW_ED31_ES_PT.pdf",
+    img: "imgs/logos/payper.jpg",
+    title: "PayPerWear",
+  },
+
+  {
+    url: "http://www.valentocatalog.eu/es-flash/index.html",
+    img: "imgs/logos/valento.jpg",
+    title: "Valento",
+  },
+
+  {
+    url: "https://rogersev.info-ges.com/",
+    img: "imgs/logos/roger.jpg",
+    title: "Roger",
+  },
+
+  {
+    url: "https://makito.es/epages/Makito.sf/sec4c0597f2f0/?ObjectPath=/Shops/Makito/Categories/CATALOGOS",
+    img: "imgs/logos/makito.jpg",
+    title: "Makito",
   },
 
   {
@@ -132,56 +176,20 @@ const allCatalogs = [
   },
 
   {
-    url: "https://www.jhktshirt.com/es/catalogo/online/",
-    img: "imgs/logos/jhk.jpg",
-    title: "JHK",
-  },
-
-  {
-    url: "https://www.sols.es/catalogo.html",
-    img: "imgs/logos/sols.jpg",
-    title: "Sol's",
-  },
-
-  {
-    url: "https://www.roly.es/?AspxAutoDetectCookieSupport=1",
-    img: "imgs/logos/roly.jpg",
-    title: "Roly",
-  },
-
-  {
     url: "https://view.joomag.com/projob-projob-2020-sp/0289677001578467544?short&",
     img: "imgs/logos/projob.jpg",
     title: "Projob",
   },
 
-  {
-    url: "https://www.payperwear.com/it/cataloghi",
-    img: "imgs/logos/payper.jpg",
-    title: "PayPerWear",
-  },
-
-  {
-    url: "http://www.valentocatalog.eu/es-flash/files/basic-html/index.html",
-    img: "imgs/logos/valento.jpg",
-    title: "Valento",
-  },
-
-  {
+  /* {
     url: "https://www.nath.es/catalog_es.php",
     img: "imgs/logos/nath.jpg",
     title: "Nath",
-  },
+  }, */
 
-  {
-    url: "https://makito.es/epages/Makito.sf/?URI",
-    img: "imgs/logos/makito.jpg",
-    title: "Makito",
-  },
-
-  {
+  /* {
     url: "",
     img: "imgs/logos/shortcut.jpg",
     title: "Shortcut",
-  },
+  }, */
 ];
