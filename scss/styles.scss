@@ -219,10 +219,10 @@ $darkFilter: 10%;
     width: 100%;
     box-sizing: border-box;
     padding: inherit;
-    filter: brightness($darkFilter);
+    //filter: brightness($darkFilter);
     color: $bodyColor;
     animation-name: undark;
-    animation-duration: 3s;
+    //animation-duration: 3s;
     animation-delay: 3.7s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -294,12 +294,13 @@ $darkFilter: 10%;
   transform: translateY(-50%);
   overflow: hidden;
   animation-name: disappear-light-effect;
-  animation-duration: 1s;
+  //animation-duration: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: #{$undarkDuration}s;
   pointer-events: none;
   opacity: 1;
+  display: none; // Remove in case of setting this animation
   transition: all 0.3s;
 }
 
@@ -314,9 +315,10 @@ $darkFilter: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation-name: light-bulb-appear;
-  animation-duration: 1.6s;
+  //animation-duration: 1.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  display: none; // Remove in case of setting this animation
 
   &__bulb {
     position: relative;
@@ -425,12 +427,13 @@ $sectionRotation: calc(360deg / $sectionsNum);
   transform: translateY(-50%);
   background-color: rgb(228, 228, 228);
   animation-name: flash-appear;
-  animation-duration: 2.2s;
+  //animation-duration: 2.2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: $undarkDuration - 2.6s;
   opacity: 0;
   pointer-events: none;
+  display: none; // Remove in case of setting this animation
 }
 
 .scrollbar-wrapper {
@@ -618,6 +621,7 @@ $sectionRotation: calc(360deg / $sectionsNum);
 
 .choose-lang__link {
   display: block;
+  cursor: pointer;
   height: 100%;
   width: 100%;
 }
@@ -948,6 +952,11 @@ $sectionRotation: calc(360deg / $sectionsNum);
 .contact-form__input {
   display: block;
   width: 100%;
+}
+
+.contact-form__privacy-politics-signature {
+  color: $bgColor;
+  margin-left: .3rem;
 }
 
 .form-sent-feedback {

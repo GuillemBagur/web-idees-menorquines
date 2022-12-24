@@ -1,3 +1,9 @@
+const getUserLang = () => {
+  let userLang = navigator.language || navigator.userLanguage;
+  console.log(userLang);
+  return userLang.split("-")[1].toLowerCase();
+}
+
 const allNavLinks = {
   es: {
     Inicio: "index.html",
@@ -24,38 +30,36 @@ const allNavLinks = {
   },
 };
 
-let lang = "ca";
+let lang = localStorage.getItem("lang") ?? getUserLang();;
 const navLinks = allNavLinks[lang];
 
-console.log(navLinks);
+document.getElementById("nav").innerHTML = "";
+let linksList = "";
 
-const drawNav = () => {
-  let linksList = "";
-
-  for (let key in navLinks) {
-    const linkTitle = key;
-    const link = navLinks[key];
-    const toRender = `
+for (let key in navLinks) {
+  const linkTitle = key;
+  const link = navLinks[key];
+  const toRender = `
     <li class="nav__nav-link-li">
         <a onclick="toggleOpenNav()" class="nav__nav-link" href="${link}">${linkTitle}</a>
     </li>`;
 
-    linksList += toRender;
-  }
+  linksList += toRender;
+}
 
-  linksList += `
+linksList += `
 <li class="nav__nav-link-li">
 <button id="change-lang" class="change-lang"><img class="icon icon--nav" width="24" src="https://unpkg.com/@icon/icofont/icons/globe.svg" alt="Icono de cambiar de idioma" />
   <ul class="choose-lang">
-    <li class="choose-lang__lang"><a class="choose-lang__link" href="#" data-lang="es">Español</a></li>
-    <li class="choose-lang__lang"><a class="choose-lang__link" href="#" data-lang="ca">Català</a></li>
-    <li class="choose-lang__lang"><a class="choose-lang__link" href="#" data-lang="en">English</a></li>
+    <li class="choose-lang__lang"><a class="choose-lang__link" data-lang="es">Español</a></li>
+    <li class="choose-lang__lang"><a class="choose-lang__link" data-lang="ca">Català</a></li>
+    <li class="choose-lang__lang"><a class="choose-lang__link" data-lang="en">English</a></li>
   </ul>
 </button>
 </li>
 `;
 
-  document.getElementById("nav").innerHTML = `
+document.getElementById("nav").innerHTML = `
 <a class="nav__home-link" href="/index.html">
 <img class="nav__logo" src="imgs/logo.png" alt="Nuestro logotipo" /></a>
   <button class="hamburger" id="hamburger">
@@ -66,10 +70,8 @@ const drawNav = () => {
 <ul class="nav__links-list" id="links-list"></ul>
 `;
 
-  document.getElementById("links-list").innerHTML = linksList;
-};
+document.getElementById("links-list").innerHTML = linksList;
 
-drawNav();
 
 // Creates a bg layer to click on to hide the current active popup
 const createTranspLayerToClick = (els) => {

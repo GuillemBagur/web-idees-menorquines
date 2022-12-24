@@ -48,6 +48,19 @@ form.addEventListener("change", (e) => {
 const sendBtn = document.getElementById("send-btn");
 
 sendBtn.addEventListener("click", async () => {
+  const privacyPoliticsSignature = document.getElementById("privacy-politics-signature");
+  if(!privacyPoliticsSignature.checked) {
+    const privacyPoliticsMsg = {
+      es: "Por favor, lee y acepta las políticas de privacidad.",
+      ca: "Sisplau, llegiu i accepteu les polítiques de privacidat.",
+      en: "Please, read and agree to privacy politics."
+    };
+
+    const lang = localStorage.getItem("lang") ?? getUserLang();
+
+    alert(privacyPoliticsMsg[lang]);
+    return;
+  }
   execAnimation("send");
   await sendForm();
 });

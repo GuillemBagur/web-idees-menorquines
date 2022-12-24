@@ -26,7 +26,7 @@ const typed = new Typed(".typed", {
   strings: allTypingStrings[lang], // lang defined in nav.js
   stringsElement: "#cadenas-texto", // ID del elemento que contiene cadenas de texto a mostrar.
   typeSpeed: 60, // Velocidad en mlisegundos para poner una letra,
-  startDelay: 4500, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+  startDelay: 700, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
   backSpeed: 40, // Velocidad en milisegundos para borrrar una letra,
   smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
   shuffle: false, // Alterar el orden en el que escribe las palabras.

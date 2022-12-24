@@ -20,11 +20,13 @@ const translate = async (thisLang) => {
     }
   }
   
-  lang = thisLang;
   generateFooter(file.footer);
+  localStorage.setItem("lang", thisLang);
 };
 
-translate("es");
+
+const sessionLang = localStorage.getItem("lang") ?? getUserLang();;
+translate(sessionLang);
 
 const translateOnLoad = () => {
 
@@ -36,10 +38,12 @@ const translateHandler = async (e) => {
   const availableLangs = ["es", "en", "ca"];
   if(availableLangs.includes(chosenLang)) {
     await translate(chosenLang);
+    location.reload();
     return;
   }
 
   await translate("es");
+  location.reload();
 }
 
 document.getElementById("change-lang").addEventListener("click", translateHandler);

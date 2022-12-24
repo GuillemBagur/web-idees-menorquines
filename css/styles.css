@@ -191,10 +191,8 @@ a {
   width: 100%;
   box-sizing: border-box;
   padding: inherit;
-  filter: brightness(10%);
   color: #bdbdbd;
   animation-name: undark;
-  animation-duration: 3s;
   animation-delay: 3.7s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -263,12 +261,12 @@ a {
   transform: translateY(-50%);
   overflow: hidden;
   animation-name: disappear-light-effect;
-  animation-duration: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 5s;
   pointer-events: none;
   opacity: 1;
+  display: none;
   transition: all 0.3s;
 }
 
@@ -283,9 +281,9 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   animation-name: light-bulb-appear;
-  animation-duration: 1.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  display: none;
 }
 .light-bulb__bulb {
   position: relative;
@@ -418,12 +416,12 @@ a {
   transform: translateY(-50%);
   background-color: #e4e4e4;
   animation-name: flash-appear;
-  animation-duration: 2.2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 2.4s;
   opacity: 0;
   pointer-events: none;
+  display: none;
 }
 
 .scrollbar-wrapper {
@@ -619,6 +617,7 @@ a {
 
 .choose-lang__link {
   display: block;
+  cursor: pointer;
   height: 100%;
   width: 100%;
 }
@@ -939,6 +938,11 @@ a {
 .contact-form__input {
   display: block;
   width: 100%;
+}
+
+.contact-form__privacy-politics-signature {
+  color: #212322;
+  margin-left: 0.3rem;
 }
 
 .form-sent-feedback {
