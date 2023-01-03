@@ -1,7 +1,7 @@
 const getUserLang = () => {
   let userLang = navigator.language || navigator.userLanguage;
-  console.log(userLang);
-  return userLang.split("-")[1].toLowerCase();
+  const result = userLang.split("-")[1] ?? "es";
+  return result.toLowerCase();
 }
 
 const allNavLinks = {
@@ -9,7 +9,7 @@ const allNavLinks = {
     Inicio: "index.html",
     "¿Quiénes somos?": "quienes-somos.html",
     Servicios: "servicios.html",
-    Catálogo: "index.html#catalogo",
+    Catálogo: "catalogo.html",
     Contacta: "contacto.html",
   },
 
@@ -17,7 +17,7 @@ const allNavLinks = {
     Home: "index.html",
     "About us": "quienes-somos.html",
     Services: "servicios.html",
-    Catalog: "index.html#catalogo",
+    Catalog: "catalogo.html",
     Contact: "contacto.html",
   },
 
@@ -25,7 +25,7 @@ const allNavLinks = {
     Inici: "index.html",
     "Sobre nosaltres": "quienes-somos.html",
     Serveis: "servicios.html",
-    Catàlegs: "index.html#catalogo",
+    Catàlegs: "catalogo.html",
     Contacte: "contacto.html",
   },
 };
@@ -189,15 +189,15 @@ const allCatalogs = [
     title: "Projob",
   },
 
-  /* {
-    url: "https://www.nath.es/catalog_es.php",
-    img: "imgs/logos/nath.jpg",
-    title: "Nath",
-  }, */
+  {
+    url: "https://www.ggoya.com/?___store=es",
+    img: "imgs/logos/goya.png",
+    title: "Goya",
+  },
 
-  /* {
-    url: "",
-    img: "imgs/logos/shortcut.jpg",
-    title: "Shortcut",
-  }, */
+  {
+    url: "https://static.gorfactory.es/catalogs/pdf/2022/stamina_es.pdf",
+    img: "imgs/logos/stamina.png",
+    title: "Stamina",
+  },
 ];

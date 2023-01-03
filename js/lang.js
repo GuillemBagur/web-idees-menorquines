@@ -1,5 +1,5 @@
 const loadFile = async (lang) => {
-  const req = await fetch(`../langs/${lang}.json`);
+  const req = await fetch(`langs/${lang}.json`);
   const file = await req.json();
   return file;
 };

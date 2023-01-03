@@ -23,7 +23,7 @@
 
   "contact": {
     "title": "<span class='word word--white'>Contact</span> us",
-    "subtitle": "Call us at <a href='tel:971 48 25 61'>971 48 25 61</a> or send us an email to",
+    "subtitle": "Call us at <a href='tel:971 48 25 61'>971 48 25 61</a>, send us an email to <a href='mailto:info@ideesmenorquines.com'>info@ideesmenorquines.com</a> or fill the form below.",
     "send": "Send",
     "sent": "Sent!",
     "privacy-politics": "Acepto las <a href='politica-privacidad.html' target='_blank'>políticas de privacidad</a>.",

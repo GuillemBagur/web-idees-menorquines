@@ -1143,7 +1143,7 @@ a {
 
 .quote {
   padding: 4rem;
-  background-color: #f07d00;
+  background-color: rgba(255, 150, 36, 0.7);
   position: fixed;
   bottom: 0rem;
   left: 0rem;
@@ -1252,7 +1252,7 @@ a {
   transition: transform 0.3s;
 }
 
-.footer--special .footer-list--brands {
+.footer--special .footer-list--brands, .footer--special .footer-list--nav {
   display: none;
 }
 
@@ -1557,7 +1557,7 @@ a {
     min-height: 50vh;
   }
 
-  .footer--special .footer-list--brands {
+  .footer--special .footer-list--brands, .footer--special .footer-list--nav {
     display: block;
   }
 

@@ -1101,7 +1101,7 @@ $patternRowWidth: 2rem;
 
 .quote {
   padding: 4rem;
-  background-color: $mainColor;
+  background-color: rgba(lighten($mainColor, 10%), 70%);
   position: fixed;
   bottom: 0rem;
   left: 0rem;
@@ -1212,7 +1212,7 @@ $patternRowWidth: 2rem;
   transition: transform 0.3s;
 }
 
-.footer--special .footer-list--brands {
+.footer--special .footer-list--brands, .footer--special .footer-list--nav {
   display: none;
 }
 
@@ -1527,7 +1527,7 @@ $animationSpeed: 180s;
     min-height: 50vh;
   }
 
-  .footer--special .footer-list--brands {
+  .footer--special .footer-list--brands, .footer--special .footer-list--nav {
     display: block;
   }
 

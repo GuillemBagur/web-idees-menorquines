@@ -35,7 +35,7 @@ const drawStars = (starsNum) => {
 };
 
 const displayReviews = async () => {
-  const allReviews = await getJSON("../data/reviews.json");
+  const allReviews = await getJSON("data/reviews.json");
   const sortedReviews = sortBy("review_timestamp", allReviews, -1);
   const reviewsList = document.getElementById("reviews-list");
   let allReviewsString = "";
@@ -64,20 +64,14 @@ const displayReviews = async () => {
   reviewsList.innerHTML = allReviewsString;
 
   $("#reviews-list").owlCarousel({
-    items: 1,
+    items: 3,
     nav: true,
     center: true,
     autoplay: true,
     autoplayTimeout: 5000,
     autoplayHoverPause: false,
     loop: true,
-    responsive: {
-      550: {
-        items: 4,
-        touchDrag: false,
-      },
-    },
   });
 };
 
-displayReviews();
+document.addEventListener("DOMContentLoaded", displayReviews);

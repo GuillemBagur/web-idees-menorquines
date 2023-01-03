@@ -70,7 +70,7 @@ const generateFooter = (
           </div>
 
           <div class="footer-list-wrapper">
-            <ul id="footer-nav" class="footer-list">
+            <ul id="footer-nav" class="footer-list footer-list--nav">
               <li class="footer-list__el footer-list__el--title">${nav}</li>
                 ${navLinksList}
             </ul>

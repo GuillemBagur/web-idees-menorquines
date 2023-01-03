@@ -13,7 +13,7 @@
   },
 
   "our-work": {
-    "title": "<span class='word word--white'>Nuestros</span> trabajos.",
+    "title": "<span class='word word--white'>Nuestros</span> trabajos",
     "ver-mas": "<img class='icon icon--mr-05' width='24' src='https://unpkg.com/@icon/icofont/icons/instagram.svg' alt='Icono de Instagram' />Ver más"
   },
 
@@ -23,7 +23,7 @@
 
   "contact": {
     "title": "<span class='word word--white'>Contácta</span>nos",
-    "subtitle": "Llámanos al <a href='tel:971 48 25 61'>971 48 25 61</a> o envíanos un email a",
+    "subtitle": "Llámanos al <a href='tel:971 48 25 61'>971 48 25 61</a>, envíanos un email a <a href='mailto:info@ideesmenorquines.com'>info@ideesmenorquines.com</a> o rellena este formulario.",
     "send": "Enviar",
     "sent": "¡Enviado!",
     "privacy-politics": "Acepto las <a href='politica-privacidad.html' target='_blank'>políticas de privacidad</a>.",

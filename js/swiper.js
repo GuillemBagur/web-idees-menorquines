@@ -1,6 +1,6 @@
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", () => {
   $("#slider-1").owlCarousel({
-    items: 1,
+    items: 3,
     touchDrag: true,
     nav: true,
     center: true,
@@ -8,11 +8,5 @@ $(document).ready(function () {
     autoplayTimeout: 3500,
     autoplayHoverPause: false,
     loop: true,
-    responsive: {
-      550: {
-        items: 3,
-        touchDrag: false,
-      },
-    },
   });
 });
