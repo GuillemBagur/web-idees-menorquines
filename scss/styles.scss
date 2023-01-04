@@ -207,8 +207,16 @@ $darkFilter: 10%;
     object-fit: cover;
     display: block;
     height: auto;
-    max-height: 25rem;
+    max-height: 30rem;
     margin: auto;
+
+    &--big {
+      object-position: center;
+      width: initial;
+      max-width: 100%;
+      height: 18rem;
+      max-height: initial;
+    }
   }
 
   &__background {
@@ -848,7 +856,12 @@ $sectionRotation: calc(360deg / $sectionsNum);
     aspect-ratio: 5 / 2;
     object-fit: cover;
     box-shadow: 0 5px 20px 1px mix(rgba(0, 0, 0, 0.5), $mainColor);
+
+    &--bottom {
+      object-position: 0 100%;
+    }
   }
+
 
   &__title {
     display: block;
