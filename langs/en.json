@@ -5,7 +5,7 @@
 
   "main": {
     "si-buscabas": "If you were searching for...",
-    "no-busques-mas": "¡<span class='word word--orange'>you've just</span> found it!"
+    "no-busques-mas": "<span class='word word--orange'>you've just</span> found it!"
   },
 
   "catalog": {
@@ -73,7 +73,7 @@
   },
 
   "branding-services": {
-    "title": "<span class='word word--white'>Branding</span> services",
+    "title": "<span class='word word--white'>Graphic</span> design",
     "subtitle": "<span class='word word--orange'>Connect emotionally</span> with your customers",
     "text-1": "At Idees Menorquines, we have more than 20 years of experience developing corporate images. During this period, more than 1.000 SMB have trusted us in the design of their logo and brand.",
     "contact": "Contact us",
@@ -90,7 +90,7 @@
     "embroider-text": "Do you want your logo with a relief effect? We embroider it for you!",
     "printout-title": "Digital printing",
     "printout-text": "We make your printing dreams come true.",
-    "branding-title": "Branding",
+    "branding-title": "Graphic design",
     "branding-text": "Does your business need a look change?"
   },
 

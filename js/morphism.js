@@ -9,7 +9,7 @@ const elts = {
 const allMorphTexts = {
   es: [
     "Bordado",
-    "Branding",
+    "Diseño gráfico",
     "Ropa laboral",
     "Ropa publicitaria",
     "Impresión",
@@ -18,7 +18,7 @@ const allMorphTexts = {
 
   en: [
     "Embroidering",
-    "Branding",
+    "Graphic Design",
     "Work wear",
     "Advertising wear",
     "Digital printing",
@@ -27,7 +27,7 @@ const allMorphTexts = {
 
   ca: [
     "Brodat",
-    "Brànding",
+    "Disseny gràfic",
     "Roba laboral",
     "Roba publicitària",
     "Impressió",

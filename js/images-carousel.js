@@ -6,7 +6,7 @@ const imagesCarousel = async () => {
 
   const keyType = [
     "Bordado",
-    "Branding",
+    "Diseño gráfico",
     "Ropa laboral",
     "Ropa publicitaria",
     "Impresión",
@@ -20,9 +20,9 @@ const imagesCarousel = async () => {
       alt: "Trabajo de bordado para Puspaayu - Idees Menorquines",
     },
     {
-      type: "Branding",
-      src: "imgs/fotos/makito.jpg",
-      alt: "Logotipo para - Idees Menorquines",
+      type: "Diseño gráfico",
+      src: "imgs/fotos/SESVOLTES.jpg",
+      alt: "Logotipo para Ses Voltes Espai Gastronòmic - Idees Menorquines",
     },
     {
       type: "Ropa laboral",

@@ -5,7 +5,7 @@
 
   "main": {
     "si-buscabas": "Si buscaves...",
-    "no-busques-mas": "¡<span class='word word--orange'>no busquis</span> més!"
+    "no-busques-mas": "<span class='word word--orange'>no busquis</span> més!"
   },
 
   "catalog": {
@@ -73,7 +73,7 @@
   },
 
   "branding-services": {
-    "title": "<span class='word word--white'>Serveis de</span> brànding",
+    "title": "<span class='word word--white'>Disseny</span> gràfic",
     "subtitle": "<span class='word word--orange'>Connecta</span> emocionalment amb els teus clients.",
     "text-1": "A Idees Menorquines tenim més de 20 anys d'experiència en el desenvolupament de projectes d'identitat corporativa. Durant aquest període, han sigut més de 1.000 les pimes que han confiat en nosaltres pel disseny del seu logotip i la seva marca",
     "contact": "Contacta'ns",
@@ -90,7 +90,7 @@
     "embroider-text": "Vols el teu logotip en relleu? Te'l brodem!",
     "printout-title": "Impressió",
     "printout-text": "Fem realitat els teus somnis d'estampat.",
-    "branding-title": "Brànding",
+    "branding-title": "Disseny gràfic",
     "branding-text": "La teva empresa necessita un canvi de look?"
   },
 

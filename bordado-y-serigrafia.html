@@ -3,9 +3,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/imgs/logo.png">
-    <link rel="apple-touch-icon" type="image/png" href="/imgs/logo.png"/>
+    <link rel="icon" type="image/png" href="/imgs/logo.png" />
+    <link rel="apple-touch-icon" type="image/png" href="/imgs/logo.png" />
     <title>Idees Menorquines</title>
+    <link rel="stylesheet" href="owl.carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="css/slider.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/nav.js" defer></script>
     <script src="js/accessibility.js" defer></script>
@@ -17,7 +19,9 @@
     <div id="wrapper" class="wrapper" data-section="embroider-print">
       <div id="main-content">
         <section class="section">
-          <h1 class="section__title" data-role="title">Bordados <span class="word word--white">y serigrafía</span></h1>
+          <h1 class="section__title" data-role="title">
+            Bordados <span class="word word--white">y serigrafía</span>
+          </h1>
           <h3 data-role="subtitle">
             ¡Solicítanos un presupuesto sin compromiso para realizar unas
             muestras!
@@ -36,18 +40,38 @@
               avarcas, etc.
             </p>
 
-            <img
-              src="imgs/fotos/BRODAT 2.jpg"
-              alt="Nuestro equipo - Idees Menorquines"
-              class="section__img"
-            />
+            <div id="embroidering-slider" class="slider owl-carousel owl-theme owl-loaded owl-drag">
+              <div class="slider__slide">
+                <div>
+                  <img
+                  src="imgs/fotos/BRODAT 2.jpg"
+                  alt="Nuestro equipo - Idees Menorquines"
+                  class="section__img"
+                />
+                </div>
+              </div>
+
+              <div class="slider__slide">
+                <img
+                  src="imgs/fotos/BRODAT 2.jpg"
+                  alt="Nuestro equipo - Idees Menorquines"
+                  class="section__img"
+                />
+              </div>
+            </div>
 
             <div class="btn-wrapper btn-wrapper--space-around">
-              <a data-role="contact" href="/contacto.html" class="btn btn--margin-top-2"
+              <a
+                data-role="contact"
+                href="/contacto.html"
+                class="btn btn--margin-top-2"
                 >Contactar</a
               >
 
-              <a data-role="our-services" href="/servicios.html" class="btn btn--margin-top-2 btn--secondary"
+              <a
+                data-role="our-services"
+                href="/servicios.html"
+                class="btn btn--margin-top-2 btn--secondary"
                 >Nuestros servicios</a
               >
             </div>
@@ -57,5 +81,6 @@
     </div>
 
     <footer id="footer" class="footer"></footer>
+    <script defer src="owl.carousel/owl.carousel.min.js"></script>
   </body>
 </html>

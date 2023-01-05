@@ -783,6 +783,7 @@ $sectionRotation: calc(360deg / $sectionsNum);
   color: $whiteColor;
   box-shadow: 0 12px 20px 1px rgba(0, 0, 0, 0.15);
   text-align: center;
+  white-space: nowrap;
   user-select: none;
   border: 3px solid $mainColor;
   transition: all 0.2s;
@@ -842,6 +843,7 @@ $sectionRotation: calc(360deg / $sectionsNum);
 .card {
   $backcroundColor: $mainColor;
   padding: 0.7rem;
+  position: relative;
   padding-bottom: 1.5rem;
   width: 75%;
   margin: auto;
@@ -849,6 +851,7 @@ $sectionRotation: calc(360deg / $sectionsNum);
   background-color: $backcroundColor;
   border-radius: 7px;
   color: $whiteColor;
+  flex-grow : 1;
 
   &__img {
     border-radius: 5px;
@@ -875,11 +878,15 @@ $sectionRotation: calc(360deg / $sectionsNum);
   }
 }
 
-.card:nth-child(even) {
+.card .btn-wrapper {
+  position: relative;
+}
+
+.card-container:nth-child(even) .card {
   background-color: darken($mainColor, 20%);
 }
 
-.card:nth-child(even) .btn {
+.card-container:nth-child(even) .card .btn {
   color: darken($mainColor, 20%);
 }
 
@@ -1416,6 +1423,9 @@ $animationSpeed: 180s;
   }
 
   .nav {
+    display: flex;
+    align-items: center;
+    max-height: 8rem;
     padding: 0.3rem;
   }
 
@@ -1449,6 +1459,7 @@ $animationSpeed: 180s;
     margin-bottom: 0;
     transform: none;
     animation: none;
+    max-height: 1.3rem;
     opacity: 1;
   }
 
@@ -1490,13 +1501,28 @@ $animationSpeed: 180s;
 
   .cards-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 1rem;
   }
 
-  .card {
-    width: 20vw;
+  .card-container {
+    display: flex;
+    flex-grow: 1;
+    width: 15vw;
   }
+
+  .card {
+    height: 100%;
+  }
+
+  .card .btn-wrapper {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    white-space: nowrap;
+    transform: translateX(-50%);
+  }  
 
   .contact-form__inputs-wrapper {
     display: flex;

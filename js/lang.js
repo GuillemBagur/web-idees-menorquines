@@ -19,31 +19,28 @@ const translate = async (thisLang) => {
       });
     }
   }
-  
+
   generateFooter(file.footer);
   localStorage.setItem("lang", thisLang);
 };
 
-
-const sessionLang = localStorage.getItem("lang") ?? getUserLang();;
+const sessionLang = localStorage.getItem("lang") ?? getUserLang();
 translate(sessionLang);
 
-const translateOnLoad = () => {
-
-}
+const translateOnLoad = () => {};
 
 const translateHandler = async (e) => {
-  const chosenLang = e.target.dataset.lang;
-  if(!chosenLang) return;
+  let chosenLang = e.target.dataset.lang;
+  if (!chosenLang) return;
   const availableLangs = ["es", "en", "ca"];
-  if(availableLangs.includes(chosenLang)) {
-    await translate(chosenLang);
-    location.reload();
-    return;
+  if (!availableLangs.includes(chosenLang)) {
+    chosenLang = "es";
   }
 
-  await translate("es");
+  await translate(chosenLang);
   location.reload();
-}
+};
 
-document.getElementById("change-lang").addEventListener("click", translateHandler);
+document
+  .getElementById("change-lang")
+  .addEventListener("click", translateHandler);
