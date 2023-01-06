@@ -7,6 +7,7 @@
     <link rel="apple-touch-icon" type="image/png" href="/imgs/logo.png"/>
 
     <title>Idees Menorquines</title>
+    <link rel="stylesheet" href="owl.carousel/owl.carousel.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/nav.js" defer></script>
     <script src="js/accessibility.js" defer></script>
@@ -34,13 +35,33 @@
               directamente sobre cualquier pieza.
             </p>
 
-            <img
-              src="imgs/fotos/cmu.jpg"
-              alt="Nuestro equipo - Idees Menorquines"
-              class="section__img"
-            />
+            <div id="service-slider" class="section__slider slider owl-carousel owl-theme owl-loaded owl-drag">
+              <div class="slider__slide">
+                <img
+                  src="imgs/fotos/cmu.jpg"
+                  alt="Nuestro equipo - Idees Menorquines"
+                  class="section__img"
+                />
+              </div>
 
-            <div class="btn-wrapper btn-wrapper--space-around">
+              <div class="slider__slide">
+                <img
+                  src="imgs/fotos/cmu.jpg"
+                  alt="Nuestro equipo - Idees Menorquines"
+                  class="section__img"
+                />
+              </div>
+
+              <div class="slider__slide">
+                <img
+                  src="imgs/fotos/cmu.jpg"
+                  alt="Nuestro equipo - Idees Menorquines"
+                  class="section__img"
+                />
+              </div>
+            </div>
+
+            <div class="btn-wrapper btn-wrapper--space-around btn-wrapper--pt-7">
               <a href="/contacto.html" class="btn btn--margin-top-2"
                 >Contactar</a
               >
@@ -55,5 +76,8 @@
     </div>
 
     <footer id="footer" class="footer"></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="owl.carousel/owl.carousel.min.js"></script>
+    <script src="js/service-slider.js" defer></script>
   </body>
 </html>

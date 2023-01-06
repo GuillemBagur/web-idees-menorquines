@@ -766,6 +766,10 @@ a {
   margin: auto;
 }
 
+.btn-wrapper--pt-7 {
+  padding-top: 7rem;
+}
+
 .btn {
   display: inline-block;
   position: relative;
@@ -1446,9 +1450,10 @@ a {
     margin: auto;
   }
 
-  .section__img {
+  .section__slider {
     width: 25%;
     margin: auto;
+    float: right;
   }
 
   .nav {

@@ -67,8 +67,9 @@ const displayReviews = async () => {
     items: 3,
     nav: true,
     center: true,
-    autoplay: true,
-    autoplayTimeout: 5000,
+    autoPlay: true,
+    autoplayTimeout: 4000,
+    autoPlaySpeed: 5000,
     autoplayHoverPause: false,
     loop: true,
   });

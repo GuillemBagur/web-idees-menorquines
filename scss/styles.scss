@@ -773,6 +773,10 @@ $sectionRotation: calc(360deg / $sectionsNum);
   margin: auto;
 }
 
+.btn-wrapper--pt-7 {
+  padding-top: 7rem;
+}
+
 .btn {
   display: inline-block;
   position: relative;
@@ -1417,10 +1421,12 @@ $animationSpeed: 180s;
     margin: auto;
   }
 
-  .section__img {
+  .section__slider {
     width: 25%;
     margin: auto;
+    float:right;
   }
+  
 
   .nav {
     display: flex;
