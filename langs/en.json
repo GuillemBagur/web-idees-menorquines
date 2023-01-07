@@ -9,7 +9,7 @@
   },
 
   "catalog": {
-    "title": "Catalogues"
+    "title": "<span class='word word--white'>Our</span> providers"
   },
 
   "our-work": {
@@ -51,8 +51,24 @@
 
   "embroider-print": {
     "title": "Embroidering <span class='word word--white'>& silk-screen printing</span>",
-    "subtitle": "Ask us a budget without any obligation, and we'll make you some samples!",
+    "subtitle": "Ask us for a budget without any obligation, and we'll make you some samples!",
     "text-1": "Thanks to our own workshop, we can offer you a professional embroidering and printing service at the best price. We also have a special service to attend to specific needs of marketing agencies, sport shops and artisans. <br /> We work jointly with every customer to express his own designs on any type of piece or item.",
+    "contact": "Contact us",
+    "our-services": "Our services"
+  },
+
+  "embroider": {
+    "title": "Embroidering",
+    "subtitle": "Ask us for a budget without any obligation, and we'll make you some samples!",
+    "text-1": "In our workshop, we have our own embroidering machines. All of our work always has a fantastic quality and a great quality-price ratio.",
+    "contact": "Contact us",
+    "our-services": "Our services"
+  },
+
+  "print": {
+    "title": "<span class='word word--white'>Silk-screen</span> printing",
+    "subtitle": "Ask us for a budget without any obligation, and we'll make you some samples!",
+    "text-1": "Thanks to our own workshop, we can offer you a professional printing service at the best price. We also have a special service to attend to specific needs of marketing agencies, sport shops and artisans. <br /> We work jointly with every customer to express his own designs on any type of piece or item.",
     "contact": "Contact us",
     "our-services": "Our services"
   },
@@ -84,7 +100,7 @@
     "title": "<span class='word word--white'>Our</span> services",
     "subtitle": "At <span class='word word--orange'>Idees Menorquines</span>, we have the best services to help you to boost your corporate image. <span class='word word--orange'>Mark the difference!</span>",
     "more-info": "More info",
-    "wear-title": "Wear",
+    "wear-title": "Work & advertising wear",
     "wear-text": "We have a large collection of clothes to choose.",
     "embroider-title": "Embroidering & silk-screen printing",
     "embroider-text": "Do you want your logo with a relief effect? We embroider it for you!",

@@ -9,7 +9,7 @@
   },
 
   "catalog": {
-    "title": "Catálogos"
+    "title": "<span class='word word--white'>Nuestros</span> proveedores"
   },
 
   "our-work": {
@@ -49,10 +49,18 @@
     "contact": "Contacto"
   },
 
-  "embroider-print": {
-    "title": "Bordados <span class='word word--white'>y serigrafía</span>",
+  "embroider": {
+    "title": "Bordado",
     "subtitle": "¡Solicítanos un presupuesto sin compromiso para realizar unas muestras!",
-    "text-1": "Gracias a que disponemos de taller propio, podemos ofrecerte un servicio profesional de estampación y bordado. También, disponemos de un servicio especializado para atender las necesidades específicas de agencias de publicidad, tiendas de deporte y fabricantes y artesanos. <br /> Trabajamos conjuntamente con cada cliente para plasmar sus propios diseños sobre cualquier tipo de prenda y complemento, calzado, avarcas, etc.",
+    "text-1": "En nuestro taller, disponemos de máquinas de bordado. Todos nuestros trabajos gozan de una gran calidad y una muy buena relación calidad-precio.",
+    "contact": "Contactar",
+    "our-services": "Nuestros servicios"
+  },
+
+  "print": {
+    "title": "<span class='word word--white'>Serigrafía</span>",
+    "subtitle": "¡Solicítanos un presupuesto sin compromiso para realizar unas muestras!",
+    "text-1": "Gracias a que disponemos de taller propio, podemos ofrecerte un servicio profesional de estampación. También, disponemos de un servicio especializado y una tarifa específica para atender las necesidades de agencias de publicidad, tiendas de deporte y fabricantes y artesanos. <br /> Trabajamos conjuntamente con cada cliente para plasmar sus propios diseños sobre cualquier tipo de prenda y complemento, calzado, avarcas, etc.",
     "contact": "Contactar",
     "our-services": "Nuestros servicios"
   },
@@ -84,11 +92,11 @@
     "title": "<span class='word word--white'>Nuestros</span> servicios",
     "subtitle": "En <span class='word word--orange'>Idees Menorquines</span> tenemos los mejores servicios para que puedas potenciar tu imagen corporativa. <span class='word word--orange'>¡Marca la diferencia!</span>",
     "more-info": "Más información",
-    "wear-title": "Ropa",
+    "wear-title": "Ropa laboral y publicitaria",
     "wear-text": "Disponemos de la más amplia gama de prendas y accesorios.",
     "embroider-title": "Bordado y serigrafía",
     "embroider-text": "¿Quieres tu logotipo con relieve? ¡Te lo bordamos!",
-    "printout-title": "Impresión",
+    "printout-title": "Impresión digital",
     "printout-text": "Hacemos realidad tus sueños en cuanto al estampado.",
     "branding-title": "Diseño gráfico",
     "branding-text": "¿Tu empresa necesita un cambio de look?"

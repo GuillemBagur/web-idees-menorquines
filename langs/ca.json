@@ -9,7 +9,7 @@
   },
 
   "catalog": {
-    "title": "Catàlegs"
+    "title": "<span class='word word--white'>Els nostres</span> proveïdors"
   },
 
   "our-work": {
@@ -57,6 +57,22 @@
     "our-services": "Els nostres serveis"
   },
 
+  "embroider": {
+    "title": "Brodat",
+    "subtitle": "Sol·licita'ns un pressupost sense compromís per realitzar unes mostres!",
+    "text-1": "Al nostre taller, disposem de màquines pròpies per al brodat. Totes les nostres feines gaudeixen d'una gran qualitat i una molt bona relació qualitat-preu.",
+    "contact": "Contacta'ns",
+    "our-services": "Els nostres serveis"
+  },
+
+  "print": {
+    "title": "<span class='word word--white'>Serigrafia</span>",
+    "subtitle": "Sol·licita'ns un pressupost sense compromís per realitzar unes mostres!",
+    "text-1": "Gràcies a que disposem de taller propi, podem oferir-te un servei professional d'estampació. També, disposem d'un servei especial i una tarifa específica per atendre les necessitats d'agències de publicitat, tendes d'esport i fabricants artesans. <br /> Treballem conjuntament amb cada client per plasmar els seus propis dissenys sobre qualsevol tipus de peça i complement, calçat, avarques, etc.",
+    "contact": "Contacta'ns",
+    "our-services": "Els nostres serveis"
+  },
+
   "work-wear": {
     "title": "<span class='word word--white'>Roba</span> laboral",
     "subtitle": "La imatge de la teva empresa <span class='word word--orange'>marca</span> la diferència.",
@@ -84,11 +100,11 @@
     "title": "<span class='word word--white'>Els nostres</span> serveis",
     "subtitle": "A  <span class='word word--orange'>Idees Menorquines</span>, tenim els millors serveis perquè puguis potenciar la teva imatge corporativa. <span class='word word--orange'>Marca la diferència!</span>",
     "more-info": "Més informació",
-    "wear-title": "Roba",
+    "wear-title": "Roba laboral i publicitària",
     "wear-text": "Disposem d'una ampla oferta de peces i accessoris.",
     "embroider-title": "Brodat i serigrafia",
     "embroider-text": "Vols el teu logotip en relleu? Te'l brodem!",
-    "printout-title": "Impressió",
+    "printout-title": "Impressió digital",
     "printout-text": "Fem realitat els teus somnis d'estampat.",
     "branding-title": "Disseny gràfic",
     "branding-text": "La teva empresa necessita un canvi de look?"

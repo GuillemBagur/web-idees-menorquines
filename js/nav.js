@@ -9,7 +9,7 @@ const allNavLinks = {
     Inicio: "index.html",
     "¿Quiénes somos?": "quienes-somos.html",
     Servicios: "servicios.html",
-    Catálogo: "catalogo.html",
+    Catálogos: "catalogo.html",
     Contacta: "contacto.html",
   },
 
@@ -17,7 +17,7 @@ const allNavLinks = {
     Home: "index.html",
     "About us": "quienes-somos.html",
     Services: "servicios.html",
-    Catalog: "catalogo.html",
+    Catalogs: "catalogo.html",
     Contact: "contacto.html",
   },
 
