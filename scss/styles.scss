@@ -1386,10 +1386,9 @@ $animationSpeed: 180s;
   right: 1rem;
   bottom: 1rem;
   border: 3px solid $mainColor;
-  height: 102%;
+  height: 101%;
   width: 95%;
   border-radius: 65% 35% 57% 43% / 35% 97% 3% 65% ;
-  //animation: change-border-radius-after-imgs-carousel 10s infinite linear;
 }
 
 @keyframes change-border-radius-after-imgs-carousel {
