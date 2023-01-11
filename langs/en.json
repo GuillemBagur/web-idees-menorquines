@@ -44,8 +44,13 @@
     "text-1": "In our team, we mix all the necessary skills to make your idea shine: creativity, perfectionism, plastic skills, experience and collaboration. Tell us your corporative dreams and we'll make them happen!"
   },
 
+  "our-facilities": {
+    "title": "Our <span class='word word--white'>facilities</span>",
+    "text-1": "PHOTOVOLTAIC SELF-CONSUMPTION SOLAR INSTALLATION ON ROOF<br>This latest expansion of the existing photovoltaic installation, by placing 30 more panels of 450W in addition to the existing 30, gives us a total power of 27 Kwp, which, connected to the network, will allow self-consumption of the industrial warehouse of the company IDEES MENORQUINES S.L..<br>This installation will produce approximately 30,000 kWh per year, which will represent a saving of 56% of the electric consumption of the industrial warehouse.<br>This expansion of the photovoltaic installation, with a budget of 13,647.49€, has been possible after the company IDEES MENORQUINES S.L. took advantage of the subsidy of the Balearic Government ACTUATIONS OF THE PROGRAMS Next Generation ROYAL DECREE 477/2021, file nºNEXTG123-295/2021, of which has been resolved, according to resolution published in BOIB nº 88, of July 7th, 2022, to grant an amount of 4,299.75€"
+  },
+
   "where-we-are": {
-    "title": "Where <span class='word word--white'>we are?</span>",
+    "title": "<span class='word word--white'>Where</span> we are?",
     "contact": "Contact us"
   },
 

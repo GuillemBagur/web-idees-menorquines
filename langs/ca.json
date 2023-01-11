@@ -44,8 +44,13 @@
     "text-1": "En el nostre equip humà es mesclen totes les habilitats necessàries perquè la teva idea surti endavant: creativitat, perfeccionisme, habilitats plàstiques, experiència i col·laboració. Explica'ns què vols i farem el teu somni corporatiu realitat!"
   },
 
+  "our-facilities": {
+    "title": "Les nostres <span class='word word--white'>instal·lacions</span>",
+    "text-1": "INSTAL·LACIÓ SOLAR FOTOVOLTAICA D'AUTOCONSUM A COBERTA <br> Aquesta darrera ampliació de la instal·lació fotovoltaica existent, col·locant 30 plaques més de 450W, a més de les 30 existents, ens dóna un total de potencia de 27 Kwp, la qual, connectada a la xarxa, permetrà l'autoconsum de la nau industrial de l'empresa IDEES MENORQUINES S.L.<br>Aquesta instal·lació produirà aproximadament uns 30.000 kWh l’any, cosa que suposarà un estalvi del 56% del consum elèctric de la nau industrial.<br>Aquesta ampliació de la instal·lació fotovoltaica, amb un pressupost de 13.647,49€, s'ha pogut dur a terme després que l’empresa IDEES MENORQUINES S.L. s’acollís a la subvenció del Govern Balear ACTUACIONS DELS PROGRAMES Next Generation REIAL DECRET 477/2021, expedient nºNEXTG123-295/2021, de la qual s'ha resolt, segons resolució publicada al BOIB núm. 88, de 7 de juliol de 2022, concedir un import de 4.299,75€"
+  },
+
   "where-we-are": {
-    "title": "A on <span class='word word--white'>estem?</span>",
+    "title": "<span class='word word--white'>A on</span> estem?",
     "contact": "Contacta'ns"
   },
 
